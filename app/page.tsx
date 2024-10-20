@@ -1,9 +1,4 @@
-import Header from "./component/Header";
-import Hero from "./component/Hero";
-import Offer from "./component/Offer";
-import Solutions from "./component/Solutions";
-import WhyUs from "./component/WhyUs";
-import Workflow from "./component/Workflow";
+import {Header, Hero, Offer, Solutions, WhyUs, Workflow} from "./_component/index";
 
 export default function Home() {
   return (
