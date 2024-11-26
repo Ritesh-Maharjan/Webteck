@@ -26,7 +26,7 @@ const ContentWithCta: React.FC<CustomizableSectionProps> = ({
         backgroundColor && `bg-${backgroundColor}`
       } ${textColor && `text-${textColor}`}`}
     >
-      <div className="max-w-screen-xl flex flex-col gap-6 border-y-2 border-[#888888] py-24 mx-8">
+      <div className="max-w-screen-xl flex flex-col gap-10 border-y-2 border-[#888888] py-24 mx-8 justify-center items-center">
         <HeadingTitle className="text-center" backgroundColor={backgroundColor} as="h2">
           {title}
         </HeadingTitle>
