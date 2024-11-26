@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import HeadingTitle from "./ui/HeadingTitle";
 
 const textSlider = [
   "Crafting Beautiful Website",
@@ -11,16 +12,10 @@ const Hero = () => {
     <div className="bg-[url('/img/home-page/hero-bg.png')] bg-cover">
       <section className="p-10 min-h-[calc(100vh-3rem)] max-w-screen-xl flex items-center justify-center mx-auto flex-col gap-14 md:flex-row">
         <div className="flex-1 flex flex-col gap-7">
-          <h1
-            className="text-4xl md:text-7xl tracking-tight font-bold text-transparent !bg-clip-text"
-            style={{
-              background:
-                "linear-gradient(to right, #999999 0%, #A1A1A1 17%, #FFFFFF 100%)",
-            }}
-          >
+          <HeadingTitle>
             Custom Websites <br />
             Tailored for you
-          </h1>
+          </HeadingTitle>
           <p className="text-lg md:text-xl leading-6 tracking-tight max-w-prose">
             We specialize in creating unique, responsive websites that elevate
             your online presence and bring your vision to life. Let us help you
