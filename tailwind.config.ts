@@ -12,6 +12,15 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(calc(-50% - 8px) )" },
+        },
+      },
+      animation: {
+        slide: "slide 10s linear infinite", // Set the duration and timing function
+      },
     },
   },
   plugins: [],
