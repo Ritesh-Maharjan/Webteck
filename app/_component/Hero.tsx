@@ -10,7 +10,7 @@ const textSlider = [
 const Hero = () => {
   return (
     <div className="bg-[url('/img/home-page/hero-bg.png')] bg-cover">
-      <section className="p-10 min-h-[calc(100vh-3rem-155px)] max-w-screen-xl flex items-center justify-center mx-auto flex-col gap-14 md:flex-row">
+      <section className="p-10 min-h-[calc(100vh-3rem-155px)] max-w-screen-2xl flex items-center justify-center mx-auto flex-col gap-14 md:flex-row">
         <div className="flex-1 flex flex-col gap-7">
           <HeadingTitle>
             Custom Websites <br />

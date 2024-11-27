@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <header className="h-auto flex items-center sticky top-0 bg-transparent backdrop-blur-lg">
-      <div className="max-w-screen-xl w-full mx-auto flex justify-between items-center p-2">
+      <div className="max-w-screen-2xl w-full mx-auto flex justify-between items-center p-2">
         <div className="flex items-center gap-2">
           <img src="/img/home-page/WebTeck-Transparent-logo.png" alt="logo" className="h-14" />
           <div className="text-white text-lg">

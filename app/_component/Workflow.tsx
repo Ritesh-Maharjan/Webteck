@@ -76,13 +76,13 @@ const Workflow = () => {
           {workflowArr.map((el, index) => (
             <div
               key={index}
-              className="relative h-[550px] w-80 md:w-96 overflow-hidden  flex flex-col gap-10 border-8 rounded-3xl border-[#888888] border-opacity-30 p-8"
+              className="relative h-[550px] w-80 overflow-hidden  flex flex-col gap-10 border-8 rounded-3xl border-[#888888] border-opacity-30 p-8"
             >
               <div className="flex flex-col gap-2">
                 <HeadingTitle
                   as="h3"
                   backgroundColor="white"
-                  className="text-xl md:text-4xl"
+                  className="text-xl md:!text-4xl w-fit"
                 >
                   {el.title}
                 </HeadingTitle>
