@@ -16,7 +16,7 @@ const HeadingTitle: React.FC<HeadingProps> = ({
 }) => {
   return (
     <Tag
-      className={`${className} text-4xl md:text-7xl tracking-tight font-bold text-transparent !bg-clip-text`}
+      className={`text-4xl md:text-7xl tracking-tight font-bold text-transparent !bg-clip-text ${className}`}
       {...props}
       style={{
         background: `${
