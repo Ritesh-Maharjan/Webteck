@@ -16,27 +16,30 @@ const Hero = () => {
             Custom Websites <br />
             Tailored for you
           </HeadingTitle>
-          <p className="text-lg md:text-xl leading-6 tracking-tight max-w-prose">
+          <p className="font-sans text-[#e0e0e0]  text-base md:text-lg leading-relaxed tracking-wide max-w-prose">
             We specialize in creating unique, responsive websites that elevate
             your online presence and bring your vision to life. Let us help you
             stand out from the crowd.
           </p>
           <div className="flex gap-6">
-            <button className="rounded-3xl border py-3 px-6 font-bold border-[#CDCDCD] text-nowrap h-fit">
+            <button className="rounded-3xl border py-3 px-6 font-bold text-white border-[#CDCDCD] text-nowrap h-fit">
               Book a call
             </button>
-            <p className="flex flex-col">
-              <span className="text-[#CDCDCD]">Have a question?</span>Schedule
-              an appointment.
+            <p className="flex flex-col gap-2">
+              <span className="text-[#CDCDCD] text-sm">Have a question?</span>
+              <span className="text-white text-sm font-semibold">Schedule
+              an appointment.</span>
             </p>
           </div>
         </div>
         <div className="flex-1">
           <Image
-            src="/img/home-page/macbook.png"
+            src="/img/home-page/macbook-1.svg"
             alt="macbook with some random info displayed"
+            layout="responsive"
             height={543}
             width={897}
+            className="w-full h-auto" 
           />
         </div>
       </section>

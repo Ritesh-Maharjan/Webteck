@@ -2,12 +2,18 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="h-12 flex items-center sticky top-0 bg-[#7A58FF]">
+    <header className="h-auto flex items-center sticky top-0 bg-transparent backdrop-blur-lg">
       <div className="max-w-screen-xl w-full mx-auto flex justify-between items-center p-2">
-        <h1>LOGO</h1>
+        <div className="flex items-center gap-2">
+          <img src="/img/home-page/WebTeck-Transparent-logo.png" alt="logo" className="h-14" />
+          <div className="text-white text-lg">
+            <p>Vancouver</p>
+            <p>WebTeck</p>
+          </div>
+        </div>
 
         <nav>
-          <ul className="flex gap-4">
+          <ul className="flex gap-4 text-white">
             <li>Home</li>
             <li>Service</li>
             <li>Pricing</li>
@@ -16,7 +22,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <button>Start a Project</button>
+        <button className="rounded-3xl border py-3 px-6 font-bold text-white border-[#CDCDCD]">Start a Project</button>
       </div>
     </header>
   );
