@@ -34,12 +34,14 @@ const Hero = () => {
         </div>
         <div className="flex-1">
           <Image
-            src="/img/home-page/macbook-1.svg"
+            src="/img/home-page/macbook.png"
             alt="macbook with some random info displayed"
             layout="responsive"
             height={543}
             width={897}
             className="w-full h-auto" 
+            style={{ objectFit: "fill" }}
+
           />
         </div>
       </section>
