@@ -12,6 +12,9 @@ const Solutions = () => {
           industry."
       cta1="Book a call"
       cta2={{ text: " For future of knowledge ", span: "Discover our vision" }}
+      backgroundColor="black" //#161519 color needs to be this number not all black
+      textColor="white"
+
     >
       <div className="flex flex-wrap gap-4 justify-center">
         <span className="border py-3 px-6 rounded-full">

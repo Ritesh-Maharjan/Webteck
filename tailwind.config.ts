@@ -15,11 +15,14 @@ const config: Config = {
       keyframes: {
         slide: {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(calc(-50% - 8px) )" },
+          "100%": { transform: "translateX(calc(-50% - 8px))" },
         },
       },
       animation: {
-        slide: "slide 10s linear infinite", // Set the duration and timing function
+        slide: "slide 25s linear infinite", // Set the duration and timing function
+      },
+      fontFamily: {
+        sans: ["'Nunito Sans'", "sans-serif"], // Add Nunito Sans as the default sans font
       },
     },
   },
