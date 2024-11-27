@@ -10,7 +10,7 @@ const textSlider = [
 const Hero = () => {
   return (
     <div className="bg-[url('/img/home-page/hero-bg.png')] bg-cover">
-      <section className="p-10 min-h-[calc(100vh-3rem)] max-w-screen-xl flex items-center justify-center mx-auto flex-col gap-14 md:flex-row">
+      <section className="p-10 min-h-[calc(100vh-3rem-155px)] max-w-screen-xl flex items-center justify-center mx-auto flex-col gap-14 md:flex-row">
         <div className="flex-1 flex flex-col gap-7">
           <HeadingTitle>
             Custom Websites <br />
@@ -42,14 +42,12 @@ const Hero = () => {
       </section>
 
       <div className="overflow-hidden ">
-        <div className="flex whitespace-nowrap gap-4 w-fit animate-slide">
-          {textSlider.map((text) => (
-            <h2 className="after:content-['|'] after:ml-4 bg-gradient-to-b from-white to-[#888888] bg-clip-text text-transparent font-semibold text-4xl md:text-7xl">
-              {text}
-            </h2>
-          ))}
-          {textSlider.map((text) => (
-            <h2 className="after:content-['|'] after:ml-4 bg-gradient-to-b from-white to-[#888888] bg-clip-text text-transparent font-semibold text-4xl md:text-7xl">
+        <div className="flex whitespace-nowrap gap-4 w-fit animate-slide mb-10 border-2 py-4">
+          {[...textSlider, ...textSlider].map((text, index) => (
+            <h2
+              key={index}
+              className="after:content-['|'] after:ml-4 bg-gradient-to-b from-white to-[#888888] bg-clip-text text-transparent font-semibold text-4xl md:text-7xl"
+            >
               {text}
             </h2>
           ))}

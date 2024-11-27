@@ -1,5 +1,4 @@
 import React from "react";
-import HeadingTitle from "./ui/HeadingTitle";
 import ContentWithCta from "./ui/ContentWithCta";
 
 const Solutions = () => {
