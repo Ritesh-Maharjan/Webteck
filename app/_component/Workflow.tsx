@@ -75,9 +75,10 @@ const Workflow = () => {
         <div className="flex items-center justify-center flex-wrap gap-10">
           {workflowArr.map((el, index) => (
             <div
-              key={index}
-              className="relative h-[550px] w-80 overflow-hidden  flex flex-col gap-10 border-8 rounded-3xl border-[#888888] border-opacity-30 p-8"
-            >
+            key={index}
+            className="relative h-[550px] w-80 overflow-hidden flex flex-col gap-10 border-4 rounded-3xl border-[#888888] border-opacity-30 p-8 shadow-[0_0_0_5px_rgba(169,169,169,0.5)]"
+          >
+      
               <div className="flex flex-col gap-2">
                 <HeadingTitle
                   as="h3"
@@ -107,6 +108,7 @@ const Workflow = () => {
                 height="264"
                 width="284"
                 alt="card display image "
+                style={{ objectFit: "contain" }}
               />
             </div>
           ))}
