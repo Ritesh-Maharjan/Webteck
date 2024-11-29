@@ -7,31 +7,37 @@ import Button from "./ui/Button";
 const WhyUs = () => {
   const whyUsArr = [
     {
+      id: "1",
       img: "/img/home-page/whyus-1.png",
       title: "Custom Built. High Performance",
       span: "Maximize your SEO and Google Ranking",
     },
     {
+      id: "2",
       img: "/img/home-page/whyus-2.png",
       title: "Responsive Design",
       span: "Captivate your audience across all devices",
     },
     {
+      id: "3",
       img: "/img/home-page/whyus-3.png",
       title: "Cutting Edge Technology",
       span: "Ultra-Fast load times powered by Next.JS & AWS",
     },
     {
+      id: "4",
       img: "/img/home-page/whyus-4.png",
       title: "Effortless Content Management",
       span: "Update your site quickly and easily",
     },
     {
+      id: "5",
       img: "/img/home-page/whyus-5.png",
       title: "Data-Driven Insights",
       span: "Make informed decisions with robust analytics",
     },
     {
+      id: "6",
       img: "/img/home-page/whyus-6.png",
       title: "Professional Support",
       span: "Our dedicated team ensures your site is always up",
@@ -89,7 +95,10 @@ const WhyUs = () => {
         <div className="flex-1 flex gap-4 flex-col justify-center bg-[#161519] px-16 rounded-xl py-10 h-[600px]">
           {activeState === "advantage" &&
             whyUsArr.map((el) => (
-              <div className="flex bg-white text-black items-stretch p-2 gap-4 rounded-md w-full">
+              <div
+                key={el.id}
+                className="flex bg-white text-black items-stretch p-2 gap-4 rounded-md w-full"
+              >
                 <div className="bg-[#444444] flex items-center justify-center rounded-md h-12 w-12">
                   <Image src={el.img} alt="icon" height={24} width={24} />
                 </div>
