@@ -30,7 +30,7 @@ const ContentWithCta: React.FC<CustomizableSectionProps> = ({
         <HeadingTitle className="text-center" backgroundColor={backgroundColor} as="h2">
           {title}
         </HeadingTitle>
-        <p className="text-[#818181]">{subtitle}</p>
+        <p className="text-[#818181] max-w-prose text-center">{subtitle}</p>
 
         <div className="flex gap-6">
           <button

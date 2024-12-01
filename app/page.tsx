@@ -1,4 +1,11 @@
-import { Hero, Offer, Solutions, WhyUs, Workflow } from "./_component/index";
+import {
+  Hero,
+  Offer,
+  Solutions,
+  WhyUs,
+  Workflow,
+  Work,
+} from "./_component/index";
 import Investment from "./_component/Investment";
 
 export default function Home() {
@@ -6,10 +13,11 @@ export default function Home() {
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <Hero />
       <Solutions />
-      <Investment />
       <Workflow />
       <Offer />
       <WhyUs />
+      <Investment />
+      <Work />
     </div>
   );
 }
