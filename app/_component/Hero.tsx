@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import HeadingTitle from "./ui/HeadingTitle";
+import TextSlider, { defaultTexts } from "../_component/ui/TextSlider";
 
-const textSlider = [
-  "Crafting Beautiful Website",
-  "Elevating Your Online Presence",
-];
+// const textSlider = [
+//   "Crafting Beautiful Website",
+//   "Elevating Your Online Presence",
+// ];
 
 const Hero = () => {
   return (
@@ -45,7 +46,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <div className="overflow-hidden ">
+      {/* <div className="overflow-hidden ">
         <div className="flex whitespace-nowrap gap-4 w-fit animate-slide mb-10 border-2 py-4">
           {[...textSlider, ...textSlider].map((text, index) => (
             <h2
@@ -56,7 +57,8 @@ const Hero = () => {
             </h2>
           ))}
         </div>
-      </div>
+      </div> */}
+			<TextSlider texts={defaultTexts} />
     </div>
   );
 };
