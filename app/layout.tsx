@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
-import { Header } from "./_component";
+import { HeaderWrapper } from "@/app/_component/ui/HeaderWrapper";
+// import { Header } from "./_component";
 import { Nunito_Sans } from "next/font/google";
 
 const nunitoSans = Nunito_Sans({
@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={`${nunitoSans.className} antialiased`}
       >
-      <Header />
+      <HeaderWrapper />
       {children}
       </body>
     </html>
