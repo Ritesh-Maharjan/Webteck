@@ -36,7 +36,6 @@ const Hero = () => {
           <Image
             src="/img/home-page/macbook.png"
             alt="macbook with some random info displayed"
-            layout="responsive"
             height={543}
             width={897}
             className="w-full h-auto" 

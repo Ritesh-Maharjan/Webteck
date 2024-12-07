@@ -41,7 +41,7 @@ const Offer = () => {
             className="flex justify-between flex-shrink-0 flex-col p-8 w-96 h-96 border-8 rounded-[30px]"
             style={{
               background:
-                "radial-gradient(circle, #FFB5B5 15%, white 75%, #EEEEEE 100%);",
+                "radial-gradient(circle, #FFB5B5 15%, white 75%, #EEEEEE 100%)",
             }}
           >
             <p>Icon</p>
