@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunitoSans.className} antialiased`}
+        className={`${nunitoSans.className} bg-black text-white antialiased`}
       >
       <HeaderWrapper />
       {children}
