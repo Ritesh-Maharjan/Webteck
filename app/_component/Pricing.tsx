@@ -184,8 +184,8 @@ const Pricing = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 items-baseline">
           <div className="bg-[#888888] flex flex-col gap-3 rounded-[30px] bg-opacity-20 overflow-hidden p-2">
             {/* First card container */}
-            {/* bg-gradient-to-br from-[#ffffff] via-[#E8E8E8] to-[#999999] */}
-            <div className="shadow-md border border-[#888888] border-opacity-15  p-8 rounded-[30px] flex flex-col gap-6 ">
+
+            <div className="shadow-md border border-[#888888] border-opacity-15  bg-gradient-to-br from-[#ffffff] via-[#E8E8E8] to-[#999999] p-8 rounded-[30px] flex flex-col gap-6 ">
               <div className="flex flex-col gap-1">
                 <div className="flex justify-between">
                   <HeadingTitle

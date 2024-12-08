@@ -83,7 +83,7 @@ const Workflow = () => {
                 <HeadingTitle
                   as="h3"
                   backgroundColor="white"
-                  className="text-xl md:!text-4xl w-fit"
+                  className="text-4xl md:!text-4xl w-fit"
                 >
                   {el.title}
                 </HeadingTitle>
@@ -91,9 +91,9 @@ const Workflow = () => {
               </div>
 
               <div>
-                <ul className="list-disc ml-4">
+                <ul className="list-disc ml-4 flex flex-col gap-2">
                   {el.procedures.map((procedure, index) => (
-                    <li key={index}>{procedure}</li>
+                    <li className="font-medium " key={index}>{procedure}</li>
                   ))}
                 </ul>
               </div>
