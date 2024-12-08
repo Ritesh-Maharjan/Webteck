@@ -5,6 +5,7 @@ import {
   WhyUs,
   Workflow,
   Work,
+  Pricing,
 } from "./_component/index";
 import Investment from "./_component/Investment";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyUs />
       <Investment />
       <Work />
+      <Pricing />
     </div>
   );
 }
