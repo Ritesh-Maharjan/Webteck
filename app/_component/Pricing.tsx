@@ -166,8 +166,8 @@ const Pricing = () => {
     accordionItems[0].id
   );
   return (
-    <section className="bg-white text-black overflow-hidden relative4 py-24 px-8 mt-32 before:absolute before:top-0 before:left-0 before:right-0 before:h-2 before:w-full before:inline-block before:bg-gradient-to-r before:from-[#D9D9D9] before:to-[#888888] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-2 after:w-full after:inline-block after:bg-gradient-to-r after:from-[#D9D9D9] after:to-[#888888]">
-      <div className="max-w-screen-2xl mx-auto flex flex-col gap-20">
+    <section className="bg-white text-black overflow-hidden relative4 py-24 mt-32 before:absolute before:top-0 before:left-0 before:right-0 before:h-2 before:w-full before:inline-block before:bg-gradient-to-r before:from-[#D9D9D9] before:to-[#888888] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-2 after:w-full after:inline-block after:bg-gradient-to-r after:from-[#D9D9D9] after:to-[#888888]">
+      <div className="max-w-screen-2xl mx-auto flex flex-col gap-20 px-8">
         {/* Section header */}
         <div className="flex items-center justify-center flex-col gap-4">
           <HeadingTitle as="h2" backgroundColor="white">
@@ -544,7 +544,9 @@ const Pricing = () => {
             </span>
           </p>
 
-          <Button className="border uppercase font-bold w-fit">Contact Us</Button>
+          <Button className="border uppercase font-bold w-fit">
+            Contact Us
+          </Button>
         </div>
       </div>
     </section>
