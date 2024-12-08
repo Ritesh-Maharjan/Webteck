@@ -1,6 +1,7 @@
 import React from "react";
 import HeadingTitle from "./ui/HeadingTitle";
 import Image from "next/image";
+import Card from "./ui/Card";
 
 const Offer = () => {
   return (
@@ -37,19 +38,14 @@ const Offer = () => {
         </div>
 
         <div className="flex gap-2">
-          <div
-            className="flex justify-between flex-shrink-0 flex-col p-8 w-96 h-96 border-8 rounded-[30px]"
-            style={{
-              background:
-                "radial-gradient(circle, #FFB5B5 15%, white 75%, #EEEEEE 100%)",
-            }}
-          >
+          <Card cardBackground="radial-gradient(circle, #FFB5B5 15%, white 75%, #EEEEEE 100%)">
             <p>Icon</p>
             <div>
               <span className="text-sm font-bold">01.</span>
               <h3 className="font-bold text-2xl">SEO Services</h3>
             </div>
-          </div>
+          </Card>
+
           <div className="flex justify-between flex-shrink-0 flex-col p-2 w-96 border-4">
             <p>Incon</p>
             <div>
