@@ -1,5 +1,5 @@
 import { servicesData } from './data';
-import ServiceCard from '@/app/_component/ui/ServiceCard';
+import ServiceCard from '@/app/_component/servicepage/ServiceCard';
 import Image from 'next/image';
 import Link from 'next/link';
 import TextSlider, { defaultTexts } from '@/app/_component/ui/TextSlider';
@@ -30,7 +30,7 @@ export default function ServicePage() {
 					</div>
 				</div>
 			</section>
-			<section className='container mx-auto p-4'>
+			<section className='container gradient-borders mx-auto'>
 				<div className='flex flex-wrap gap-4'>
 					{servicesData.map((service) => (
 						<Link
