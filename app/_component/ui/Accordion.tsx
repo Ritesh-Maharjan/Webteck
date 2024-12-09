@@ -37,11 +37,14 @@ const Accordion: React.FC<accordionTypes> = ({
       </button>
       <div
         id={`accordion-content-${id}`}
-        className={`text-[#888888] mx-3 my-0 overflow-hidden ${
-          isActive ? "h-full mb-2" : "h-0"
-        }`}
+        className={`text-[#888888] mx-3 my-0 overflow-hidden h-full mb-2`}
       >
-        {content}
+        <div className="content-wrapper">
+          <br />
+          <ul>
+            {/* your list items */}
+          </ul>
+        </div>
       </div>
     </div>
   );
