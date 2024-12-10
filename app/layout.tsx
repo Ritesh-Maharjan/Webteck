@@ -3,6 +3,7 @@ import "./globals.css";
 import { HeaderWrapper } from "@/app/_component/ui/HeaderWrapper";
 // import { Header } from "./_component";
 import { Nunito_Sans } from "next/font/google";
+import Footer from "./_component/ui/Footer";
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
@@ -25,8 +26,9 @@ export default function RootLayout({
       <body
         className={`${nunitoSans.className} bg-black text-white antialiased`}
       >
-      <HeaderWrapper />
-      {children}
+        <HeaderWrapper />
+        {children}
+        <Footer />
       </body>
     </html>
   );
