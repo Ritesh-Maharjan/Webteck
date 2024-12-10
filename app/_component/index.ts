@@ -7,4 +7,5 @@ export { default as Workflow } from "../_component/Workflow";
 export { default as Work } from "../_component/Work";
 export { default as Pricing } from "../_component/Pricing";
 export { default as Transform } from "../_component/Transform";
+export { default as Testimonial } from "../_component/Testimonial";
 // add more components if needed
