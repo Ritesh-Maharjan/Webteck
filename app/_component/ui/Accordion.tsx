@@ -1,13 +1,11 @@
 import { Dispatch, SetStateAction } from "react";
 
-import { UUIDTypes } from "uuid";
-
 type accordionTypes = {
-  id: UUIDTypes;
+  id: string;
   title: string;
   content: React.ReactNode;
-  activeAccordion: UUIDTypes | null;
-  setActiveAccordion: Dispatch<SetStateAction<UUIDTypes | null>>;
+  activeAccordion: string | null;
+  setActiveAccordion: Dispatch<SetStateAction<string | null>>;
 };
 
 const Accordion: React.FC<accordionTypes> = ({
@@ -35,17 +33,14 @@ const Accordion: React.FC<accordionTypes> = ({
           } transition-all relative w-5 h-[2px] bg-black before:w-full before:inline-block before:h-full before:absolute before:top-0 before:left-0 before:bg-black before:rotate-90`}
         ></div>
       </button>
-      <div
-        id={`accordion-content-${id}`}
-        className={`text-[#888888] mx-3 my-0 overflow-hidden h-full mb-2`}
-      >
-        <div className="content-wrapper">
-          <br />
-          <ul>
-            {/* your list items */}
-          </ul>
+      {isActive && (
+        <div
+          id={`accordion-content-${id}`}
+          className={`text-[#888888] mx-3 my-0 overflow-hidden h-full mb-2`}
+        >
+          <div className="content-wrapper">{content}</div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

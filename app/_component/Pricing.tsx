@@ -1,168 +1,185 @@
 "use client";
 import React, { useState } from "react";
-import { UUIDTypes, v1 as uuidv1 } from "uuid";
 import HeadingTitle from "./ui/HeadingTitle";
 import Button from "./ui/Button";
 import Accordion from "./ui/Accordion";
 
 const accordionItems = [
   {
-    id: uuidv1(),
+    id: "item-1",
     title: "How long does it take to build a website?",
     content: (
-      <p>
-        The timeline for building a website depends on the complexity and
-        features required. <br />
-        We will provide a detailed project timeline after understanding your
-        specific requirements.
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
         <ul>
           <li>Landing page - 10 days. </li>
           <li>Basic website - 21 days.</li>
           <li>Corporate website - 3months.</li>
         </ul>
-      </p>
+      </>
     ),
   },
   {
-    id: uuidv1(),
+    id: "item-2",
     title: "Is maintenance mandatory?",
     content: (
-      <p>
-        The timeline for building a website depends on the complexity and
-        features required. <br />
-        We will provide a detailed project timeline after understanding your
-        specific requirements.
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
         <ul>
           <li>Landing page - 10 days. </li>
           <li>Basic website - 21 days.</li>
           <li>Corporate website - 3months.</li>
         </ul>
-      </p>
+      </>
     ),
   },
   {
-    id: uuidv1(),
+    id: "item-3",
     title: "What happens after I pay the deposit?",
     content: (
-      <p>
-        The timeline for building a website depends on the complexity and
-        features required. <br />
-        We will provide a detailed project timeline after understanding your
-        specific requirements.
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
         <ul>
           <li>Landing page - 10 days. </li>
           <li>Basic website - 21 days.</li>
           <li>Corporate website - 3months.</li>
         </ul>
-      </p>
+      </>
     ),
   },
   {
-    id: uuidv1(),
+    id: "item-4",
     title: "Can I change my plan later?",
     content: (
-      <p>
-        The timeline for building a website depends on the complexity and
-        features required. <br />
-        We will provide a detailed project timeline after understanding your
-        specific requirements.
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
         <ul>
           <li>Landing page - 10 days. </li>
           <li>Basic website - 21 days.</li>
           <li>Corporate website - 3months.</li>
         </ul>
-      </p>
+      </>
     ),
   },
   {
-    id: uuidv1(),
+    id: "item-5",
     title: "Do you offer custom pricing for larger projects?",
     content: (
-      <p>
-        The timeline for building a website depends on the complexity and
-        features required. <br />
-        We will provide a detailed project timeline after understanding your
-        specific requirements.
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
         <ul>
           <li>Landing page - 10 days. </li>
           <li>Basic website - 21 days.</li>
           <li>Corporate website - 3months.</li>
         </ul>
-      </p>
+      </>
     ),
   },
   {
-    id: uuidv1(),
+    id: "item-6",
     title: "Is there a contract commitment?",
     content: (
-      <p>
-        The timeline for building a website depends on the complexity and
-        features required. <br />
-        We will provide a detailed project timeline after understanding your
-        specific requirements.
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
         <ul>
           <li>Landing page - 10 days. </li>
           <li>Basic website - 21 days.</li>
           <li>Corporate website - 3months.</li>
         </ul>
-      </p>
+      </>
     ),
   },
   {
-    id: uuidv1(),
+    id: "item-7",
     title: "What’s included in the Basic Maintenance plan?",
     content: (
-      <p>
-        The timeline for building a website depends on the complexity and
-        features required. <br />
-        We will provide a detailed project timeline after understanding your
-        specific requirements.
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
         <ul>
           <li>Landing page - 10 days. </li>
           <li>Basic website - 21 days.</li>
           <li>Corporate website - 3months.</li>
         </ul>
-      </p>
+      </>
     ),
   },
   {
-    id: uuidv1(),
+    id: "item-8",
     title: "How does Standard Maintenance differ from Basic?",
     content: (
-      <p>
-        The timeline for building a website depends on the complexity and
-        features required. <br />
-        We will provide a detailed project timeline after understanding your
-        specific requirements.
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
         <ul>
           <li>Landing page - 10 days. </li>
           <li>Basic website - 21 days.</li>
           <li>Corporate website - 3months.</li>
         </ul>
-      </p>
+      </>
     ),
   },
   {
-    id: uuidv1(),
+    id: "item-9",
     title: "Can I upgrade or downgrade my maintenance plan??",
     content: (
-      <p>
-        The timeline for building a website depends on the complexity and
-        features required. <br />
-        We will provide a detailed project timeline after understanding your
-        specific requirements.
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
         <ul>
           <li>Landing page - 10 days. </li>
           <li>Basic website - 21 days.</li>
           <li>Corporate website - 3months.</li>
         </ul>
-      </p>
+      </>
     ),
   },
 ];
 
 const Pricing = () => {
-  const [activeAccordion, setActiveAccordion] = useState<UUIDTypes | null>(
+  const [activeAccordion, setActiveAccordion] = useState<string | null>(
     accordionItems[0].id
   );
   return (
