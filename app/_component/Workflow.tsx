@@ -1,6 +1,6 @@
 import React from "react";
 import HeadingTitle from "./ui/HeadingTitle";
-import Image from "next/image";
+import InfoCard from "./ui/InfoCard";
 
 const workflowArr = [
   {
@@ -48,7 +48,7 @@ const workflowArr = [
       "Define Scope & Deliverables",
       "Establish Communication Channels",
     ],
-    ranking: "01",
+    ranking: "04",
     img: "/img/home-page/card-4.png",
   },
 ];
@@ -74,43 +74,14 @@ const Workflow = () => {
 
         <div className="flex items-center justify-center flex-wrap gap-10">
           {workflowArr.map((el, index) => (
-            <div
-            key={index}
-            className="relative h-[550px] w-80 overflow-hidden flex flex-col gap-10 border-4 rounded-3xl border-[#888888] border-opacity-30 p-8 shadow-[0_0_0_5px_rgba(169,169,169,0.5)]"
-          >
-      
-              <div className="flex flex-col gap-2">
-                <HeadingTitle
-                  as="h3"
-                  backgroundColor="white"
-                  className="text-4xl md:!text-4xl w-fit"
-                >
-                  {el.title}
-                </HeadingTitle>
-                <p className="text-[#888888]">{el.subtitle}</p>
-              </div>
-
-              <div>
-                <ul className="list-disc ml-4 flex flex-col gap-2">
-                  {el.procedures.map((procedure, index) => (
-                    <li className="font-medium " key={index}>{procedure}</li>
-                  ))}
-                </ul>
-              </div>
-
-              <span className="absolute bottom-8 tracking-tight left-8 text-6xl font-semibold">
-                {el.ranking}
-              </span>
-
-              <Image
-                className={`absolute h-[200px] w-[300px] bottom-0 -right-20`}
-                src={el.img}
-                height="264"
-                width="284"
-                alt="card display image "
-                style={{ objectFit: "contain" }}
-              />
-            </div>
+            <InfoCard
+              key={el.ranking}
+              title={el.title}
+              subtitle={el.subtitle}
+              procedures={el.procedures}
+              ranking={el.ranking}
+              img={el.img}
+            />
           ))}
         </div>
       </div>
