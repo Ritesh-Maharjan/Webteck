@@ -3,6 +3,7 @@ import ServiceCard from '@/app/_component/servicepage/ServiceCard';
 import Image from 'next/image';
 import Link from 'next/link';
 import TextSlider, { defaultTexts } from '@/app/_component/ui/TextSlider';
+import Investment from '../_component/Investment';
 
 export default function ServicePage() {
 	return (
@@ -30,18 +31,17 @@ export default function ServicePage() {
 					</div>
 				</div>
 			</section>
-			<section className='container gradient-borders mx-auto'>
-				<div className='flex flex-wrap gap-4'>
+			<section className='gradient-borders mx-auto'>
+				<div className='flex flex-col gap-4'>
 					{servicesData.map((service) => (
-						<Link
-							href={`/service/${service.id}`}
-							key={service.id}
-							className='w-full md:w-[calc(33.33%-1rem)]' // adjust width as needed
-						>
-							<ServiceCard service={service} />
-						</Link>
+						<ServiceCard 
+							key={service.id} 
+							service={service} 
+							index={servicesData.indexOf(service)} 
+						/>
 					))}
 				</div>
+				<Investment />
 			</section>
 		</main>
 	);

@@ -3,7 +3,11 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
-const Header = () => {
+interface HeaderProps {
+  isVisible: boolean;
+}
+
+const Header: React.FC<HeaderProps> = ({ isVisible }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {

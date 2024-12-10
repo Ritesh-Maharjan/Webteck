@@ -1,19 +1,22 @@
 "use client"
-import React from 'react'
+import React, { Suspense } from 'react'
 import Header from '../Header'
 import { usePathname } from "next/navigation";
 
-export const HeaderWrapper = () => {
+const HeaderContent = (): JSX.Element => {
 	const pathname = usePathname();
 	
-	// Check if pathname starts with any of these paths
 	const shouldShowHeader = ['/blog/', '/docs/', '/'].some(path => 
 		pathname.startsWith(path)
 	);
 
+	return <Header isVisible={shouldShowHeader} />;
+}
+
+export const HeaderWrapper = (): JSX.Element => {
 	return (
-		<>
-			<Header isVisible={shouldShowHeader} />
-		</>
-	)
+		<Suspense fallback={<Header isVisible={true} />}>
+			<HeaderContent />
+		</Suspense>
+	);
 }

@@ -4,5 +4,10 @@ import { servicesData } from "../data";
 
 export default function ServicePage({ params }: { params: { serviceId: string } }) {
   const service = servicesData.find(service => service.id === params.serviceId);
-  return <div>{service?.title}</div>;
+  return <div>
+		<h1>{service?.title}</h1>
+		<p>{service?.fullDescription}</p>
+		<p>{service?.features}</p>
+		<p>{service?.image}</p>
+		</div>;
 }
