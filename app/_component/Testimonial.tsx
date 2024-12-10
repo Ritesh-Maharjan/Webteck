@@ -3,8 +3,8 @@ import HeadingTitle from "./ui/HeadingTitle";
 
 const Testimonial = () => {
   return (
-    <section className="py-28 px-8 bg-white text-black">
-      <div className="max-w-screen-2xl flex flex-col items-center gap-12 mx-auto">
+    <section className="py-28 bg-white text-black">
+      <div className="max-w-screen-2xl px-8 flex flex-col items-center gap-12 mx-auto">
         <div className="flex flex-col items-center gap-4">
           <HeadingTitle
             as="h2"

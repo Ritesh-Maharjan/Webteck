@@ -6,7 +6,7 @@ import Card from "./ui/Card";
 const Offer = () => {
   return (
     <section className="pt-32 pb-72 bg-white text-black px-8 overflow-hidden">
-      <div className="max-w-screen-2xl mx-auto flex flex-col gap-4">
+      <div className="max-w-screen-2xl px-8 mx-auto flex flex-col gap-4">
         <div className="flex justify-between items-end">
           <div className="flex flex-col gap-4">
             <HeadingTitle as="h2" backgroundColor="black" className="w-fit">
