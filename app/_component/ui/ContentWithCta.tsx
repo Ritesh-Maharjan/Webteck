@@ -22,11 +22,11 @@ const ContentWithCta: React.FC<CustomizableSectionProps> = ({
 }) => {
   return (
     <section
-      className={`flex flex-col items-center before:h-2 before:w-full before:inline-block before:bg-gradient-to-r before:from-[#D9D9D9] before:to-[#888888] after:h-2 after:w-full after:inline-block after:bg-gradient-to-r after:from-[#D9D9D9] after:to-[#888888] before:mb-24 after:mt-24 ${
+      className={`flex flex-col items-center gradient-borders ${
         backgroundColor && `bg-${backgroundColor}`
       } ${textColor && `text-${textColor}`}`}
     >
-      <div className="max-w-screen-2xl flex flex-col gap-10 border-y-2 border-[#888888] py-24 mx-8 justify-center items-center">
+      <div className="max-w-screen-2xl flex flex-col gap-10 border-y-2 border-[#888888] py-24 px-8 justify-center items-center">
         <HeadingTitle className="text-center" backgroundColor={backgroundColor} as="h2">
           {title}
         </HeadingTitle>

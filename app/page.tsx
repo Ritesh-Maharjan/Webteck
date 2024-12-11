@@ -6,12 +6,14 @@ import {
   Workflow,
   Work,
   Pricing,
+  Transform,
+  Testimonial,
 } from "./_component/index";
 import Investment from "./_component/Investment";
 
 export default function Home() {
   return (
-    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="min-h-screen font-sans">
       <Hero />
       <Solutions />
       <Workflow />
@@ -20,6 +22,8 @@ export default function Home() {
       <Investment />
       <Work />
       <Pricing />
+      <Transform />
+      <Testimonial />
     </div>
   );
 }

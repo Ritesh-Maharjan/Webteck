@@ -1,11 +1,191 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import HeadingTitle from "./ui/HeadingTitle";
 import Button from "./ui/Button";
+import Accordion from "./ui/Accordion";
+
+const accordionItems = [
+  {
+    id: "item-1",
+    title: "How long does it take to build a website?",
+    content: (
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
+        <ul>
+          <li>Landing page - 10 days. </li>
+          <li>Basic website - 21 days.</li>
+          <li>Corporate website - 3months.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "item-2",
+    title: "Is maintenance mandatory?",
+    content: (
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
+        <ul>
+          <li>Landing page - 10 days. </li>
+          <li>Basic website - 21 days.</li>
+          <li>Corporate website - 3months.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "item-3",
+    title: "What happens after I pay the deposit?",
+    content: (
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
+        <ul>
+          <li>Landing page - 10 days. </li>
+          <li>Basic website - 21 days.</li>
+          <li>Corporate website - 3months.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "item-4",
+    title: "Can I change my plan later?",
+    content: (
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
+        <ul>
+          <li>Landing page - 10 days. </li>
+          <li>Basic website - 21 days.</li>
+          <li>Corporate website - 3months.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "item-5",
+    title: "Do you offer custom pricing for larger projects?",
+    content: (
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
+        <ul>
+          <li>Landing page - 10 days. </li>
+          <li>Basic website - 21 days.</li>
+          <li>Corporate website - 3months.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "item-6",
+    title: "Is there a contract commitment?",
+    content: (
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
+        <ul>
+          <li>Landing page - 10 days. </li>
+          <li>Basic website - 21 days.</li>
+          <li>Corporate website - 3months.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "item-7",
+    title: "What’s included in the Basic Maintenance plan?",
+    content: (
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
+        <ul>
+          <li>Landing page - 10 days. </li>
+          <li>Basic website - 21 days.</li>
+          <li>Corporate website - 3months.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "item-8",
+    title: "How does Standard Maintenance differ from Basic?",
+    content: (
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
+        <ul>
+          <li>Landing page - 10 days. </li>
+          <li>Basic website - 21 days.</li>
+          <li>Corporate website - 3months.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "item-9",
+    title: "Can I upgrade or downgrade my maintenance plan??",
+    content: (
+      <>
+        <p>
+          The timeline for building a website depends on the complexity and
+          features required. <br />
+          We will provide a detailed project timeline after understanding your
+          specific requirements.
+        </p>
+        <ul>
+          <li>Landing page - 10 days. </li>
+          <li>Basic website - 21 days.</li>
+          <li>Corporate website - 3months.</li>
+        </ul>
+      </>
+    ),
+  },
+];
 
 const Pricing = () => {
+  const [activeAccordion, setActiveAccordion] = useState<string | null>(
+    accordionItems[0].id
+  );
   return (
-    <section className="bg-white text-black overflow-hidden relative mt-24 py-24 px-8 before:absolute before:top-0 before:left-0 before:right-0 before:h-2 before:w-full before:inline-block before:bg-gradient-to-r before:from-[#D9D9D9] before:to-[#888888] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-2 after:w-full after:inline-block after:bg-gradient-to-r after:from-[#D9D9D9] after:to-[#888888]">
-      <div className="max-w-screen-2xl mx-auto flex flex-col gap-20">
+    <section className="bg-white text-black overflow-hidden relative py-24 mt-32 before:absolute before:top-0 before:left-0 before:right-0 before:h-2 before:w-full before:inline-block before:bg-gradient-to-r before:from-[#D9D9D9] before:to-[#888888] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-2 after:w-full after:inline-block after:bg-gradient-to-r after:from-[#D9D9D9] after:to-[#888888]">
+      <div className="max-w-screen-2xl mx-auto flex flex-col gap-20 px-8">
+        {/* Section header */}
         <div className="flex items-center justify-center flex-col gap-4">
           <HeadingTitle as="h2" backgroundColor="white">
             Pricing
@@ -17,12 +197,12 @@ const Pricing = () => {
             your investment.
           </p>
         </div>
-
+        {/* Pricing */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 items-baseline">
           <div className="bg-[#888888] flex flex-col gap-3 rounded-[30px] bg-opacity-20 overflow-hidden p-2">
             {/* First card container */}
-            {/* bg-gradient-to-br from-[#ffffff] via-[#E8E8E8] to-[#999999] */}
-            <div className="shadow-md border border-[#888888] border-opacity-15  p-8 rounded-[30px] flex flex-col gap-6 ">
+
+            <div className="shadow-md border border-[#888888] border-opacity-15  bg-gradient-to-br from-[#ffffff] via-[#E8E8E8] to-[#999999] p-8 rounded-[30px] flex flex-col gap-6 ">
               <div className="flex flex-col gap-1">
                 <div className="flex justify-between">
                   <HeadingTitle
@@ -349,6 +529,41 @@ const Pricing = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* FAQ section */}
+        <div>
+          <div className="mb-10 flex flex-col gap-2">
+            <h3 className="font-bold text-5xl">Frequently Asked Questions</h3>
+            <p className="text-[#888888]">Some common questions and answers</p>
+          </div>
+
+          {/* Accordion Container*/}
+          <div className="flex flex-col gap-2">
+            {accordionItems.map((el) => (
+              <Accordion
+                key={el.id}
+                id={el.id}
+                title={el.title}
+                content={el.content}
+                activeAccordion={activeAccordion}
+                setActiveAccordion={setActiveAccordion}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-5">
+          <p className="flex flex-col gap-1 text-3xl">
+            Have more questions?
+            <span className="text-xl">
+              If you have additional questions, feel free to reach out.
+            </span>
+          </p>
+
+          <Button className="border uppercase font-bold w-fit">
+            Contact Us
+          </Button>
         </div>
       </div>
     </section>
