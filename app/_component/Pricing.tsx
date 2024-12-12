@@ -19,65 +19,48 @@ const accordionItems = [
         <ul>
           <li>Landing page - 10 days. </li>
           <li>Basic website - 21 days.</li>
-          <li>Corporate website - 3months.</li>
+          <li>Corporate website - 3 months.</li>
         </ul>
       </>
     ),
   },
   {
     id: "item-2",
-    title: "Is maintenance mandatory?",
+    title: "What’s included in each pricing plan?",
     content: (
       <>
         <p>
-          The timeline for building a website depends on the complexity and
-          features required. <br />
-          We will provide a detailed project timeline after understanding your
-          specific requirements.
+          Each plan includes essential services tailored to different needs. 
+          The Basic plan covers foundational support, while the Standard and 
+          Premium plans offer enhanced features such as performance monitoring, 
+          regular updates, and dedicated support. For detailed inclusions, 
+          please refer to the plan comparison chart.
         </p>
-        <ul>
-          <li>Landing page - 10 days. </li>
-          <li>Basic website - 21 days.</li>
-          <li>Corporate website - 3months.</li>
-        </ul>
       </>
     ),
   },
   {
     id: "item-3",
-    title: "What happens after I pay the deposit?",
+    title: "Can I change my plan later?",
     content: (
       <>
         <p>
-          The timeline for building a website depends on the complexity and
-          features required. <br />
-          We will provide a detailed project timeline after understanding your
-          specific requirements.
+          Yes, you can upgrade or downgrade your plan at any time to better suit 
+          your needs. Simply contact us, and we’ll assist with the transition to 
+          a new plan.
         </p>
-        <ul>
-          <li>Landing page - 10 days. </li>
-          <li>Basic website - 21 days.</li>
-          <li>Corporate website - 3months.</li>
-        </ul>
       </>
     ),
   },
   {
     id: "item-4",
-    title: "Can I change my plan later?",
+    title: "Are there any setup fees or hidden charges?",
     content: (
       <>
         <p>
-          The timeline for building a website depends on the complexity and
-          features required. <br />
-          We will provide a detailed project timeline after understanding your
-          specific requirements.
+          No, we believe in transparent pricing with no hidden fees. All costs 
+          are outlined in the plan details, so you’ll know exactly what to expect.
         </p>
-        <ul>
-          <li>Landing page - 10 days. </li>
-          <li>Basic website - 21 days.</li>
-          <li>Corporate website - 3months.</li>
-        </ul>
       </>
     ),
   },
@@ -87,92 +70,47 @@ const accordionItems = [
     content: (
       <>
         <p>
-          The timeline for building a website depends on the complexity and
-          features required. <br />
-          We will provide a detailed project timeline after understanding your
-          specific requirements.
+          Absolutely. If your project requires additional support or custom 
+          features, please reach out, and we’ll create a tailored plan to meet 
+          your needs.
         </p>
-        <ul>
-          <li>Landing page - 10 days. </li>
-          <li>Basic website - 21 days.</li>
-          <li>Corporate website - 3months.</li>
-        </ul>
       </>
     ),
   },
   {
     id: "item-6",
-    title: "Is there a contract commitment?",
+    title: "What payment methods do you accept?",
     content: (
       <>
         <p>
-          The timeline for building a website depends on the complexity and
-          features required. <br />
-          We will provide a detailed project timeline after understanding your
-          specific requirements.
+          We accept various payment methods, including credit cards, debit cards, 
+          and direct bank transfers, for your convenience.
         </p>
-        <ul>
-          <li>Landing page - 10 days. </li>
-          <li>Basic website - 21 days.</li>
-          <li>Corporate website - 3months.</li>
-        </ul>
       </>
     ),
   },
   {
     id: "item-7",
-    title: "What’s included in the Basic Maintenance plan?",
+    title: "Is there a contract commitment?",
     content: (
       <>
         <p>
-          The timeline for building a website depends on the complexity and
-          features required. <br />
-          We will provide a detailed project timeline after understanding your
-          specific requirements.
+          We offer both monthly and annual options. You’re free to choose the 
+          commitment level that best fits your needs, and you can cancel anytime 
+          with a month’s notice.
         </p>
-        <ul>
-          <li>Landing page - 10 days. </li>
-          <li>Basic website - 21 days.</li>
-          <li>Corporate website - 3months.</li>
-        </ul>
       </>
     ),
   },
   {
     id: "item-8",
-    title: "How does Standard Maintenance differ from Basic?",
+    title: "What if I need help choosing the right plan?",
     content: (
       <>
         <p>
-          The timeline for building a website depends on the complexity and
-          features required. <br />
-          We will provide a detailed project timeline after understanding your
-          specific requirements.
+          We’re here to help! Feel free to reach out, and our team will assist 
+          you in selecting the plan that aligns with your business goals and budget.
         </p>
-        <ul>
-          <li>Landing page - 10 days. </li>
-          <li>Basic website - 21 days.</li>
-          <li>Corporate website - 3months.</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    id: "item-9",
-    title: "Can I upgrade or downgrade my maintenance plan??",
-    content: (
-      <>
-        <p>
-          The timeline for building a website depends on the complexity and
-          features required. <br />
-          We will provide a detailed project timeline after understanding your
-          specific requirements.
-        </p>
-        <ul>
-          <li>Landing page - 10 days. </li>
-          <li>Basic website - 21 days.</li>
-          <li>Corporate website - 3months.</li>
-        </ul>
       </>
     ),
   },
@@ -202,7 +140,7 @@ const Pricing = () => {
           <div className="bg-[#888888] flex flex-col gap-3 rounded-[30px] bg-opacity-20 overflow-hidden p-2">
             {/* First card container */}
 
-            <div className="shadow-md border border-[#888888] border-opacity-15  bg-gradient-to-br from-[#ffffff] via-[#E8E8E8] to-[#999999] p-8 rounded-[30px] flex flex-col gap-6 ">
+            <div className="shadow-md border border-[#888888] border-opacity-15  bg-gradient-to-br from-[#ffffff] via-[#E8E8E8] to-[#afafaf] p-8 rounded-[30px] flex flex-col gap-6 ">
               <div className="flex flex-col gap-1">
                 <div className="flex justify-between">
                   <HeadingTitle
@@ -212,15 +150,17 @@ const Pricing = () => {
                   >
                     Landing Page
                   </HeadingTitle>
-                  <span className="text-[#CDCDCD]">1-3 Pages, Parallax</span>
+                  <span className="text-[#636262]">1-3 Pages, Parallax</span>
                 </div>
-                <p className="font-bold flex justify-between">
-                  CA$ 1,1199
-                  <span className="font-normal text-[#CDCDCD]">
+                <div className=" flex justify-between">
+                  <p className="font-bold text-md md:text-2xl flex justify-between ">
+                    CA$ 1,199
+                  </p>
+                  <span className="font-normal text-sm text-[#636262]">
                     Pay $600 deposit today
                   </span>
-                </p>
-                <p>
+                </div>
+                <p className="text-[#636262] ">
                   Perfect for personal, startups or small businesses looking to
                   make a strong first impression online.
                 </p>
@@ -261,7 +201,7 @@ const Pricing = () => {
                 </h3>
                 <p className="font-bold">
                   CA$20-$80
-                  <span className="text-[#888888] font-normal">/mo</span>
+                  <span className="text-[#888888] font-normal">/month</span>
                 </p>
                 <p className="text-[#888888]">
                   Provides essential updates, security patches, and 2 hours of
@@ -294,7 +234,7 @@ const Pricing = () => {
           <div className="bg-[#888888] flex flex-col gap-3 rounded-[30px] bg-opacity-20 overflow-hidden p-2">
             {/* First card container */}
             {/* bg-gradient-to-br from-[#ffffff] via-[#E8E8E8] to-[#999999] */}
-            <div className="shadow-md border border-[#888888] border-opacity-15  p-8 rounded-[30px] flex flex-col gap-6 bg-gradient-to-br from-[#000000] via-[#585858] to-[#999999] text-white">
+            <div className="shadow-md border border-[#888888] border-opacity-15  p-8 rounded-[30px] flex flex-col gap-6 bg-gradient-to-br from-[#272727] via-[#303030] to-[#525252] text-white">
               <div className="flex flex-col gap-1">
                 <div className="flex justify-between">
                   <HeadingTitle as="h3" className="text-xl md:!text-3xl">
@@ -302,13 +242,15 @@ const Pricing = () => {
                   </HeadingTitle>
                   <span className="text-[#CDCDCD]">3-7 Pages</span>
                 </div>
-                <p className="font-bold flex justify-between">
-                  CA$3,999
-                  <span className="font-normal text-[#CDCDCD]">
-                    Pay $1,500 deposit today
+                <div className="flex justify-between">
+                  <p className="font-bold text-md md:text-2xl flex justify-between">
+                    CA$3,999
+                  </p>
+                  <span className="font-normal text-sm text-[#CDCDCD]">
+                      Pay $1,500 deposit today
                   </span>
-                </p>
-                <p>
+                </div>
+                <p className="text-[#CDCDCD]">
                   For organizations seeking on affordable yet comprehensive web
                   solution to establish e-presence.
                 </p>
@@ -317,25 +259,25 @@ const Pricing = () => {
               <div className="h-[3px] bg-[#CDCDCD] bg-opacity-40" />
 
               <ul>
-                <li className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[url('/img/home-page/whatweoffer-7.png')] before:bg-contain before:bg-no-repeat">
+                <li className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[url('/img/home-page/whatweoffer-7.png')] before:bg-contain before:bg-no-repeat before:filter before:invert-[100%] before:brightness-[200%]">
                   Up 7 custom-designed pages
                 </li>
-                <li className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[url('/img/home-page/whatweoffer-7.png')] before:bg-contain before:bg-no-repeat">
+                <li className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[url('/img/home-page/whatweoffer-7.png')] before:bg-contain before:bg-no-repeat before:filter before:invert-[100%] before:brightness-[200%]">
                   Mobile-Responsive Design
                 </li>
-                <li className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[url('/img/home-page/whatweoffer-7.png')] before:bg-contain before:bg-no-repeat">
+                <li className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[url('/img/home-page/whatweoffer-7.png')] before:bg-contain before:bg-no-repeat before:filter before:invert-[100%] before:brightness-[200%]">
                   On page SEO Optimization
                 </li>
-                <li className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[url('/img/home-page/whatweoffer-7.png')] before:bg-contain before:bg-no-repeat">
+                <li className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[url('/img/home-page/whatweoffer-7.png')] before:bg-contain before:bg-no-repeat before:filter before:invert-[100%] before:brightness-[200%]">
                   Contact Form Integration
                 </li>
-                <li className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[url('/img/home-page/whatweoffer-7.png')] before:bg-contain before:bg-no-repeat">
+                <li className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[url('/img/home-page/whatweoffer-7.png')] before:bg-contain before:bg-no-repeat before:filter before:invert-[100%] before:brightness-[200%]">
                   2 round of revisions included
                 </li>
-                <li className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[url('/img/home-page/whatweoffer-7.png')] before:bg-contain before:bg-no-repeat">
+                <li className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[url('/img/home-page/whatweoffer-7.png')] before:bg-contain before:bg-no-repeat before:filter before:invert-[100%] before:brightness-[200%]">
                   Social Media Links
                 </li>
-                <li className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[url('/img/home-page/whatweoffer-7.png')] before:bg-contain before:bg-no-repeat">
+                <li className="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:w-4 before:h-4 before:bg-[url('/img/home-page/whatweoffer-7.png')] before:bg-contain before:bg-no-repeat before:filter before:invert-[100%] before:brightness-[200%]">
                   Blog setup to publish content
                 </li>
               </ul>
@@ -356,7 +298,7 @@ const Pricing = () => {
                 </h3>
                 <p className="font-bold">
                   CA$100-$250
-                  <span className="text-[#888888] font-normal">/mo</span>
+                  <span className="text-[#888888] font-normal">/month</span>
                 </p>
                 <p className="text-[#888888]">
                   Includes regular updates, security monitoring, performance
@@ -402,7 +344,7 @@ const Pricing = () => {
           <div className="bg-[#888888] flex flex-col gap-3 rounded-[30px] bg-opacity-20 overflow-hidden p-2">
             {/* third card container */}
             {/* bg-gradient-to-br from-[#ffffff] via-[#E8E8E8] to-[#999999] */}
-            <div className="shadow-md border border-[#888888] border-opacity-15  p-8 rounded-[30px] flex flex-col gap-6 ">
+            <div className="shadow-md border border-[#888888] border-opacity-15  bg-gradient-to-br from-[#ffffff] via-[#E8E8E8] to-[#afafaf] p-8 rounded-[30px] flex flex-col gap-6 ">
               <div className="flex flex-col gap-1">
                 <div className="flex justify-between">
                   <HeadingTitle
@@ -412,15 +354,17 @@ const Pricing = () => {
                   >
                     Corporate
                   </HeadingTitle>
-                  <span className="text-[#CDCDCD]">10-20 Pages</span>
+                  <span className="text-[#636262]">10-20 Pages</span>
                 </div>
-                <p className="font-bold flex justify-between">
-                  CA$8,999
-                  <span className="font-normal text-[#CDCDCD]">
-                    Pay $2,000 deposit today
+                <div className="flex justify-between">
+                  <p className="font-bold text-md md:text-2xl flex justify-between">
+                    CA$8,999
+                  </p>
+                  <span className="font-normal text-sm text-[#636262]">
+                      Pay $2,000 deposit today
                   </span>
-                </p>
-                <p>
+                </div>
+                <p className="text-[#636262] text-md">
                   Enterprises needing a scalable solution with custom features
                   and a polished high-end design.
                 </p>
@@ -482,7 +426,7 @@ const Pricing = () => {
                 </h3>
                 <p className="font-bold">
                   CA$300-$500
-                  <span className="text-[#888888] font-normal">/mo</span>
+                  <span className="text-[#888888] font-normal">/month</span>
                 </p>
                 <p className="text-[#888888]">
                   Provides essential updates, security patches, and 2 hours of
