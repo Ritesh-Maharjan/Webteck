@@ -23,7 +23,7 @@ const Footer = () => {
           <a href="">
             <Image
               src="/img/home-page/footer-fb.png"
-              alt="fb logo"
+              alt="facebook logo"
               height={31}
               width={31}
             />
@@ -31,7 +31,7 @@ const Footer = () => {
           <a href="">
             <Image
               src="/img/home-page/footer-instagram.png"
-              alt="fb logo"
+              alt="instragram logo"
               height={31}
               width={31}
             />
@@ -39,7 +39,7 @@ const Footer = () => {
           <a href="">
             <Image
               src="/img/home-page/footer-linkedin.png"
-              alt="fb logo"
+              alt="linkedin logo"
               height={31}
               width={31}
             />

@@ -19,10 +19,10 @@ const config: Config = {
         },
       },
       animation: {
-        slide: "slide 25s linear infinite", // Set the duration and timing function
+        slide: "slide 25s linear infinite", 
       },
       fontFamily: {
-        sans: ["'Nunito Sans'", "sans-serif"], // Add Nunito Sans as the default sans font
+        sans: ["'Nunito Sans'", "sans-serif"], 
       },
     },
   },
