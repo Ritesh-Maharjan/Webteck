@@ -8,6 +8,7 @@ const ServiceCard = ({ service, index }: { service: any, index: number }) => {
 		<div className={`container mx-auto flex items-center ${index % 2 === 1 ? 'flex-row' : 'flex-row-reverse'}`}>
 			<div className="flex-1">
 				<h2>{service.title}</h2>
+				<p>THIS IS THE SERVICE CARD</p>
 				<p>{service?.fullDescription}</p>
 				<ul className="list-disc ml-6">
 					{service?.features?.map((feature: string, index: number) => (

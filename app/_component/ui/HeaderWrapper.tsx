@@ -6,16 +6,16 @@ import { usePathname } from "next/navigation";
 const HeaderContent = (): JSX.Element => {
 	const pathname = usePathname();
 	
-	const shouldShowHeader = ['/blog/', '/docs/', '/'].some(path => 
-		pathname.startsWith(path)
-	);
+	// const shouldShowHeader = ['/blog/', '/docs/', '/'].some(path => 
+	// 	pathname.startsWith(path)
+	// );
 
-	return <Header isVisible={shouldShowHeader} />;
+	return <Header />;
 }
 
 export const HeaderWrapper = (): JSX.Element => {
 	return (
-		<Suspense fallback={<Header isVisible={true} />}>
+		<Suspense fallback={<Header />}>
 			<HeaderContent />
 		</Suspense>
 	);
