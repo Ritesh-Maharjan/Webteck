@@ -10,7 +10,7 @@ const defaultTexts = [
 const TextSlider = ({ texts = defaultTexts }: TextSliderProps) => {
   return (
     <div className="overflow-hidden">
-      <div className="flex whitespace-nowrap gap-4 w-fit animate-slide mb-10 border-2 py-4">
+      <div className="flex whitespace-nowrap gap-4 w-fit animate-slide border-2 py-4">
         {[...texts, ...texts].map((text, index) => (
           <h2
             key={index}

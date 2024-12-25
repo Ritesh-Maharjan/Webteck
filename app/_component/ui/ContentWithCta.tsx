@@ -22,7 +22,7 @@ const ContentWithCta: React.FC<CustomizableSectionProps> = ({
 }) => {
   return (
     <section
-      className={`flex flex-col items-center gradient-borders ${
+      className={`flex flex-col items-center mt-4 gradient-borders ${
         backgroundColor && `bg-${backgroundColor}`
       } ${textColor && `text-${textColor}`}`}
     >
