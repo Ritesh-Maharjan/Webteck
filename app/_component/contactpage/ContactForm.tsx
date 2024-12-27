@@ -163,7 +163,7 @@ const ContactForm = () => {
         </button>
         <div className="flex flex-col text-sm gap-1 text-[#CDCDCD]">
           Have a question?
-          <a className="text-white" href="">
+          <a className="text-white" href="https://calendly.com/vancouverwebteck/30min">
             Book a meeting
           </a>
         </div>

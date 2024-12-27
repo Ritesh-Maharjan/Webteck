@@ -23,9 +23,14 @@ const Hero = () => {
             stand out from the crowd.
           </p>
           <div className="flex gap-6">
-            <button className="rounded-3xl border py-3 px-6 font-bold text-white border-[#CDCDCD] text-nowrap h-fit">
+            <a 
+              href="https://calendly.com/vancouverwebteck/30min" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="rounded-3xl border py-3 px-6 font-bold text-white border-[#CDCDCD] text-nowrap h-fit hover:text-[#7A58FF] hover:border-[#7A58FF] transition duration-10 ease-in-out"
+            >
               Book a call
-            </button>
+            </a>
             <p className="flex flex-col gap-2">
               <span className="text-[#CDCDCD] text-sm">Have a question?</span>
               <span className="text-white text-sm font-semibold">Schedule

@@ -62,7 +62,7 @@ const Header = () => {
 
         {/* Call to Action Button */}
         <button
-          className={`hidden md:block rounded-3xl border py-2 px-4 font-medium text-medium transition duration-300 ease-in-out ${
+          className={`hidden md:block rounded-3xl border py-2 px-4 font-medium text-medium transition duration-10 ease-in-out ${
             isScrolled
               ? "border-gray-400 text-black hover:text-[#7A58FF] hover:border-[#7A58FF]"
               : "border-[#CDCDCD] text-white hover:text-[#7A58FF] hover:border-[#7A58FF]"
@@ -77,7 +77,7 @@ const Header = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <button
-            className={`rounded-3xl border py-2 px-4 font-medium text-sm transition duration-300 ease-in-out ${
+            className={`rounded-3xl border py-2 px-4 font-medium text-sm transition duration-10 ease-in-out ${
               isScrolled
                 ? "border-gray-400 text-black hover:text-[#7A58FF] hover:border-[#7A58FF]"
                 : "border-[#CDCDCD] text-white hover:text-[#7A58FF] hover:border-[#7A58FF]"
