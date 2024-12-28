@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { servicesData } from "../data";
 import Image from "next/image";
 import { serviceFaq } from "../../data/servicefaq";
@@ -31,7 +31,19 @@ export function ServiceFaq({ category }: { category: string }) {
 }
 
 export default function ServicePage({ params }: { params: { serviceId: string } }) {
-  const service = servicesData.find(service => service.id === params.serviceId);
+  const [serviceId, setServiceId] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchServiceId = async () => {
+      const unwrappedParams = await params;
+      setServiceId(unwrappedParams.serviceId);
+    };
+
+    fetchServiceId();
+  }, [params]);
+
+  const service = servicesData.find(service => service.id === serviceId);
+
   return <>
 	<section className="h-screen">
 		<div>
@@ -100,7 +112,7 @@ export default function ServicePage({ params }: { params: { serviceId: string } 
 				</ul>
 			</div>
 		</div>
-	<ServiceFaq category={service?.id || "ahahah"} />
+	<ServiceFaq category={serviceId || "default-category"} />
 	</section>
 		</>;
 }
