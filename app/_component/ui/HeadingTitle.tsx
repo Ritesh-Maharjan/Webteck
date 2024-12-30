@@ -21,7 +21,7 @@ const HeadingTitle: React.FC<HeadingProps> = ({
       style={{
         background: `${
           backgroundColor
-            ? "linear-gradient(to right, #000000 0%, #141414 14%, #999999 100%)"
+            ? "linear-gradient(to right, #222222 0%, #333333 10%, #555555 100%)"
             : "linear-gradient(to right, #999999 0%, #A1A1A1 17%, #FFFFFF 100%)"
         }`,
       }}

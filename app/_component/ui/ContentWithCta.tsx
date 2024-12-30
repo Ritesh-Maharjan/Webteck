@@ -1,8 +1,8 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import HeadingTitle from "./HeadingTitle";
 
 interface CustomizableSectionProps {
-  title: string;
+  title: ReactNode;
   subtitle: string;
   cta1: string;
   cta2: { text: string; span: string };
@@ -30,14 +30,17 @@ const ContentWithCta: React.FC<CustomizableSectionProps> = ({
         <HeadingTitle className="text-center" backgroundColor={backgroundColor} as="h2">
           {title}
         </HeadingTitle>
-        <p className="text-[#818181] max-w-prose text-center">{subtitle}</p>
+        <p className="text-[#818181] text-xl max-w-prose text-center">{subtitle}</p>
 
         <div className="flex gap-6">
-          <button
-            className={`text-${textColor} rounded-3xl border py-3 px-6 font-bold border-[#CDCDCD] text-nowrap h-fit`}
+          <a
+            href="https://calendly.com/vancouverwebteck/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`text-${textColor} rounded-3xl border py-3 px-6 font-bold border-[#CDCDCD] text-nowrap h-fit hover:text-[#7A58FF] hover:border-[#7A58FF] transition duration-10 ease-in-out`}
           >
             {cta1}
-          </button>
+          </a>
           <p className="text-[#CDCDCD] flex flex-col text-xs">
             {cta2.text} <span className={`text-${textColor} text-sm`}>{cta2.span}</span>
           </p>

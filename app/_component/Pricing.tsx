@@ -126,7 +126,7 @@ const Pricing = () => {
         {/* Section header */}
         <div className="flex items-center justify-center flex-col gap-4">
           <HeadingTitle as="h2" backgroundColor="white">
-            Pricing
+            Pricing Plans
           </HeadingTitle>
           <p className="text-[#818181] max-w-prose text-center md:text-2xl">
             At WebTeck, we offer flexible and transparent pricing plans to suit
@@ -141,7 +141,7 @@ const Pricing = () => {
             {/* First card container */}
 
             <div className="shadow-md border border-[#888888] border-opacity-15  bg-gradient-to-br from-[#ffffff] via-[#E8E8E8] to-[#afafaf] p-8 rounded-[30px] flex flex-col gap-6 ">
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-3">
                 <div className="flex justify-between">
                   <HeadingTitle
                     as="h3"
@@ -152,7 +152,7 @@ const Pricing = () => {
                   </HeadingTitle>
                   <span className="text-[#636262]">1-3 Pages, Parallax</span>
                 </div>
-                <div className=" flex justify-between">
+                <div className=" flex justify-between items-center">
                   <p className="font-bold text-md md:text-2xl flex justify-between ">
                     CA$ 1,199
                   </p>
@@ -235,14 +235,14 @@ const Pricing = () => {
             {/* First card container */}
             {/* bg-gradient-to-br from-[#ffffff] via-[#E8E8E8] to-[#999999] */}
             <div className="shadow-md border border-[#888888] border-opacity-15  p-8 rounded-[30px] flex flex-col gap-6 bg-gradient-to-br from-[#272727] via-[#303030] to-[#525252] text-white">
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-3">
                 <div className="flex justify-between">
                   <HeadingTitle as="h3" className="text-xl md:!text-3xl">
                     Basic Website
                   </HeadingTitle>
                   <span className="text-[#CDCDCD]">3-7 Pages</span>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between items-center">
                   <p className="font-bold text-md md:text-2xl flex justify-between">
                     CA$3,999
                   </p>
@@ -345,7 +345,7 @@ const Pricing = () => {
             {/* third card container */}
             {/* bg-gradient-to-br from-[#ffffff] via-[#E8E8E8] to-[#999999] */}
             <div className="shadow-md border border-[#888888] border-opacity-15  bg-gradient-to-br from-[#ffffff] via-[#E8E8E8] to-[#afafaf] p-8 rounded-[30px] flex flex-col gap-6 ">
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-3">
                 <div className="flex justify-between">
                   <HeadingTitle
                     as="h3"
@@ -356,11 +356,11 @@ const Pricing = () => {
                   </HeadingTitle>
                   <span className="text-[#636262]">10-20 Pages</span>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between items-center">
                   <p className="font-bold text-md md:text-2xl flex justify-between">
                     CA$8,999
                   </p>
-                  <span className="font-normal text-sm text-[#636262]">
+                  <span className="font-normal  text-sm text-[#636262]">
                       Pay $2,000 deposit today
                   </span>
                 </div>

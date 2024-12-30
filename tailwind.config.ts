@@ -23,6 +23,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["'Nunito Sans'", "sans-serif"], 
+        playfair: ["'Playfair Display'", "serif"],
       },
     },
   },
