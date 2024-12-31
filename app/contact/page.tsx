@@ -14,13 +14,13 @@ const page = () => {
               Let's work together
             </HeadingTitle>
             <div className="flex flex-col gap-4">
-              <p className="text-[#CDCDCD] flex flex-col">
+              <p className="text-[#CDCDCD] text-lg flex flex-col">
                 Phone:
                 <a className="text-white" href="tel:+17783188494">
                   +1 (778) 318 8494
                 </a>
               </p>
-              <p className="text-[#CDCDCD] flex flex-col">
+              <p className="text-[#CDCDCD] text-lg flex flex-col">
                 Email:
                 <a
                   className="text-white"

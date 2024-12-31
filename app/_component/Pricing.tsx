@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import HeadingTitle from "./ui/HeadingTitle";
 import Button from "./ui/Button";
 import Accordion from "./ui/Accordion";
+import Link from "next/link";
 
 const accordionItems = [
   {
@@ -121,7 +122,7 @@ const Pricing = () => {
     accordionItems[0].id
   );
   return (
-    <section className="bg-white text-black overflow-hidden relative py-24 mt-32 before:absolute before:top-0 before:left-0 before:right-0 before:h-2 before:w-full before:inline-block before:bg-gradient-to-r before:from-[#D9D9D9] before:to-[#888888] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-2 after:w-full after:inline-block after:bg-gradient-to-r after:from-[#D9D9D9] after:to-[#888888]">
+    <section id="pricing" className="bg-white text-black overflow-hidden relative py-24 mt-32 before:absolute before:top-0 before:left-0 before:right-0 before:h-2 before:w-full before:inline-block before:bg-gradient-to-r before:from-[#D9D9D9] before:to-[#888888] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-2 after:w-full after:inline-block after:bg-gradient-to-r after:from-[#D9D9D9] after:to-[#888888]">
       <div className="max-w-screen-2xl mx-auto flex flex-col gap-20 px-8">
         {/* Section header */}
         <div className="flex items-center justify-center flex-col gap-4">
@@ -187,9 +188,11 @@ const Pricing = () => {
               </ul>
 
               <div>
-                <Button className="bg-gradient-to-r from-black to-[#606060] text-white">
-                  Choose This Plan
-                </Button>
+                <Link href="/contact">
+                  <Button className="bg-gradient-to-r from-black to-[#606060] text-white">
+                    Choose This Plan
+                  </Button>
+                </Link>
               </div>
             </div>
 
@@ -283,9 +286,11 @@ const Pricing = () => {
               </ul>
 
               <div>
-                <Button className="bg-white text-black">
-                  Choose This Plan
-                </Button>
+                <Link href="/contact">
+                  <Button className="bg-white text-black">
+                    Choose This Plan
+                  </Button>
+                </Link>
               </div>
             </div>
 
@@ -412,9 +417,11 @@ const Pricing = () => {
               </ul>
 
               <div>
-                <Button className="bg-gradient-to-r from-black to-[#606060] text-white">
-                  Choose This Plan
-                </Button>
+                <Link href="/contact">
+                  <Button className="bg-gradient-to-r from-black to-[#606060] text-white">
+                    Choose This Plan
+                  </Button>
+                </Link>
               </div>
             </div>
 
@@ -504,10 +511,11 @@ const Pricing = () => {
               If you have additional questions, feel free to reach out.
             </span>
           </p>
-
-          <Button className="border uppercase font-bold w-fit">
-            Contact Us
-          </Button>
+          <Link href="/contact">
+            <Button className="border uppercase font-bold w-fit">
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

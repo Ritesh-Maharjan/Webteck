@@ -57,7 +57,7 @@ const ContactForm = () => {
         <input
           type="text"
           id="name"
-          placeholder="Your name*"
+          placeholder="Your name*:"
           {...register("name")}
           className={`${
             errors.name ? "border-b-2 border-opacity-1 border-red-500" : ""
@@ -77,7 +77,7 @@ const ContactForm = () => {
         <input
           type="email"
           id="email"
-          placeholder="Your email*"
+          placeholder="Your email*:"
           {...register("email")}
           className={`${
             errors.name ? "border-b-2 border-opacity-1 border-red-500" : ""
@@ -93,11 +93,11 @@ const ContactForm = () => {
       <div>
         <label className="hidden" htmlFor="referal">
           Referal code:
-        </label>
+        </label> 
         <input
           type="text"
           id="Referal Code"
-          placeholder="referal"
+          placeholder="Referral Code:"
           {...register("referal")}
           className={`bg-transparent border-b border-white w-full border-opacity-50 focus:outline-none py-1`}
         />
@@ -110,7 +110,7 @@ const ContactForm = () => {
         <textarea
           id="message"
           {...register("message")}
-          placeholder="Tell us about your project"
+          placeholder="Tell us about your project:"
           className={`${
             errors.name ? "border-b-2 border-opacity-1 border-red-500" : ""
           } bg-transparent border-b border-white w-full border-opacity-50 focus:outline-none py-1`}
@@ -133,8 +133,8 @@ const ContactForm = () => {
             errors.name ? "border-b-2 border-opacity-1 border-red-500" : ""
           } bg-transparent border-b border-white w-full border-opacity-50 focus:outline-none py-1`}
         >
-          <option className="bg-black text-white" value="Maintenance plan">
-            Maintenance plan
+          <option value="value" disabled selected className="bg-black text-white">
+            Maintenance plan:
           </option>
           <option className="bg-black text-white" value="Landing Page">
             Landing Page
@@ -161,7 +161,7 @@ const ContactForm = () => {
         >
           {isSubmitting ? "Sending..." : "Request Proposal"}
         </button>
-        <div className="flex flex-col text-sm gap-1 text-[#CDCDCD]">
+        <div className="flex flex-col text-base gap-1 text-[#CDCDCD]">
           Have a question?
           <a className="text-white" href="https://calendly.com/vancouverwebteck/30min">
             Book a meeting

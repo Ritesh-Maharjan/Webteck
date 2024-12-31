@@ -9,12 +9,19 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 200); // Change threshold as needed
+      setIsScrolled(window.scrollY > 200); 
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const navItems = [
+    { name: "Home", link: "/" },
+    { name: "Service", link: "/service" },
+    { name: "Pricing", link: "/#pricing" },
+    { name: "Contact", link: "/contact" },
+  ];
 
   return (
     <header
@@ -45,10 +52,13 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex">
           <ul className="flex gap-6 text-lg">
-            {["Home", "Service", "Pricing", "Contact"].map((item) => (
-              <li key={item} className="relative group">
-                <Link href={`/${item.toLowerCase()}`} className="transition-colors duration-300">
-                  {item}
+            {navItems.map((item) => (
+              <li key={item.name} className="relative group">
+                <Link
+                  href={item.link}
+                  className="transition-colors duration-300"
+                >
+                  {item.name}
                 </Link>
                 <span
                   className={`absolute left-0 bottom-0 w-0 h-0.5 ${
@@ -68,7 +78,9 @@ const Header = () => {
               : "border-[#CDCDCD] text-white hover:text-[#7A58FF] hover:border-[#7A58FF]"
           }`}
         >
-          Start a Project
+          <Link href="/contact">
+            Start a Project
+          </Link>
         </button>
 
         {/* Mobile Menu Toggle */}
