@@ -1,8 +1,8 @@
 import React from "react";
-import ContactForm from "../_component/contactpage/ContactForm";
-import HeadingTitle from "../_component/ui/HeadingTitle";
-import Investment from "../_component/Investment";
-import TextSlider, { defaultTexts } from "../_component/ui/TextSlider";
+import ContactForm from "../../_component/contactpage/ContactForm";
+import HeadingTitle from "../../_component/ui/HeadingTitle";
+import Investment from "../../_component/Investment";
+import TextSlider, { defaultTexts } from "../../_component/ui/TextSlider";
 
 const page = () => {
   return (
@@ -11,7 +11,7 @@ const page = () => {
         <div className="max-w-screen-xl mx-auto px-8 grid py-20 md:grid-cols-6 gap-y-10">
           <div className="flex flex-col gap-6 justify-between md:col-span-3">
             <HeadingTitle as="h1" className="w-fit">
-              Let's work together
+              Let&apos;s work together
             </HeadingTitle>
             <div className="flex flex-col gap-4">
               <p className="text-[#CDCDCD] text-lg flex flex-col">

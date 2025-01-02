@@ -128,12 +128,13 @@ const ContactForm = () => {
         </label>
         <select
           id="plan"
+          defaultValue={"value"}
           {...register("plan")}
           className={`${
             errors.name ? "border-b-2 border-opacity-1 border-red-500" : ""
           } bg-transparent border-b border-white w-full border-opacity-50 focus:outline-none py-1`}
         >
-          <option value="value" disabled selected className="bg-black text-white">
+          <option value="value" disabled className="bg-black text-white">
             Maintenance plan:
           </option>
           <option className="bg-black text-white" value="Landing Page">

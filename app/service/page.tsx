@@ -1,8 +1,7 @@
 import { servicesData } from "./data";
-import ServiceCard from "@/app/_component/servicepage/ServiceCard";
+import ServiceCard from "../_component/servicepage/ServiceCard";
 import Image from "next/image";
-import Link from "next/link";
-import TextSlider, { defaultTexts } from "@/app/_component/ui/TextSlider";
+import TextSlider, { defaultTexts } from "../_component/ui/TextSlider";
 import Investment from "../_component/Investment";
 import HeadingTitle from "../_component/ui/HeadingTitle";
 
@@ -50,8 +49,8 @@ export default function ServicePage() {
             />
           ))}
         </div>
-        <Investment />
       </section>
+      <Investment />
     </main>
   );
 }

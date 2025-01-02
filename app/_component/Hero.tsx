@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import HeadingTitle from "./ui/HeadingTitle";
-import TextSlider, { defaultTexts } from "../_component/ui/TextSlider";
+import TextSlider, { defaultTexts } from "./ui/TextSlider";
 
 // const textSlider = [
 //   "Crafting Beautiful Website",
