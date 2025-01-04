@@ -8,6 +8,7 @@ import {
   Pricing,
   Transform,
   Testimonial,
+  Blog,
 } from "./_component/index";
 import Investment from "./_component/Investment";
 
@@ -24,6 +25,7 @@ export default function Home() {
       <Pricing />
       <Transform />
       <Testimonial />
+      <Blog />
     </div>
   );
 }

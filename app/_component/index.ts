@@ -8,4 +8,5 @@ export { default as Work } from "./Work";
 export { default as Pricing } from "./Pricing";
 export { default as Transform } from "./Transform";
 export { default as Testimonial } from "./Testimonial";
+export { default as Blog } from "./Blog";
 // add more components if needed
