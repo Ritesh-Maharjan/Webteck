@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { HeaderWrapper } from "@/(app)/_component/ui/HeaderWrapper";
+import { HeaderWrapper } from "@/_component/ui/HeaderWrapper";
 // import { Header } from "./_component";
 import { Nunito_Sans } from "next/font/google";
 import Footer from "./_component/ui/Footer";
