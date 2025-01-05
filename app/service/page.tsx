@@ -39,8 +39,8 @@ export default function ServicePage() {
           </div>
         </div>
       </section>
-      <section className="gradient-borders mt-4 mx-auto max-w-screen-2xl">
-        <div className="flex flex-col gap-4">
+      <section className="gradient-borders mt-4 mx-auto max-w-screen-2xl px-4">
+        <div className="flex flex-col gap-4 md:gap-20">
           {servicesData.map((service) => (
             <ServiceCard
               key={service.id}
