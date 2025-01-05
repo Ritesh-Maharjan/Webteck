@@ -13,9 +13,9 @@ export function ServiceFaq({ category }: { category: string }) {
   const [activeAccordion, setActiveAccordion] = useState<string | null>(null);
 
   return (
-    <div>
-      <h2 className="text-3xl font-bold">Frequently Asked Questions</h2>
-      <div>
+    <div className="bg-white mb-0 pt-16 pb-20 rounded-t-3xl">
+      <h2 className="text-3xl font-bold text-black">Frequently Asked Questions</h2>
+      <div className="text-black mb-0">
         {serviceFaq
           .filter((faq) => faq.category === category)
           .map((faq, index) => (
@@ -29,6 +29,11 @@ export function ServiceFaq({ category }: { category: string }) {
             />
           ))}
       </div>
+			<div className="text-black">
+				<h3>Have More Questions?</h3>
+				<p>If you have additional questions, feel free to reach out.</p>
+				<button>penis</button>
+			</div>
     </div>
   );
 }
@@ -99,7 +104,7 @@ export default function ServicePage({
         </div>
       </section>
 
-      <section className="gradient-borders ">
+      <section className="gradient-border-service ">
         <h2 className="text-4xl font-bold text-center mb-24">
           {service?.detailTitle}
         </h2>

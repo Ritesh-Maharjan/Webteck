@@ -191,7 +191,7 @@ export const servicesData = [
 		},
     ],
     detailTitle: "UI/UX design solutions",
-    solutionImage1: "/img/service-page/web-development.png",
+    solutionImage1: "/img/uiux-detail/uiux-img-comp-1.png",
     solutionImage1Title: "UI/UX Design",
     solutionImage1Desc:
       "Transform the way users interact with your brand through thoughtful wireframes and memorable interfaces. Let’s bring your idea to life and create digital experiences that set you apart from the competition",
@@ -200,7 +200,7 @@ export const servicesData = [
       "SEO optimization",
       "User-friendly management",
     ],
-    solutionImage2: "/img/service-page/web-development.png",
+    solutionImage2: "/img/uiux-detail/uiux-img-comp-2.png",
     solutionImage2Title: "Maintenance services",
     solutionImage2Desc:
       "As your business grows, maintaining and updating your online presence can become challenging. We offer ongoing support during and after the project to ensure your digital assets stay effective.",
@@ -209,7 +209,7 @@ export const servicesData = [
       "SEO optimization",
       "User-friendly management",
     ],
-    solutionImage3: "/img/service-page/web-development.png",
+    solutionImage3: "/img/uiux-detail/uiux-img-comp-3.png",
     solutionImage3Title: "SEO service",
     solutionImage3Desc:
       "Our SEO services are designed to improve your website’s visibility and drive more organic traffic. We start with a comprehensive audit to identify areas for optimization, then implement on-page and technical SEO strategies tailored to your business.",
@@ -295,12 +295,12 @@ export const servicesData = [
       },
     ],
     detailTitle: "Web development solutions",
-    solutionImage1: "/img/service-page/web-development.png",
+    solutionImage1: "/img/web-maintenance-detail/webmaintenance-img-comp-1.png",
     solutionImage1Title: "Web Development",
     solutionImage1Desc:
       "We bring the most amazing designs into customized live web solutions. Through a detailed process, we ensure a seamless user experience, lighting fast speed, everything for a great SEO start, and a web system that any of your colleagues can manage.",
     bulletPoints1: [],
-    solutionImage2: "/img/service-page/web-development.png",
+    solutionImage2: "/img/web-maintenance-detail/webmaintenance-img-comp-2.png",
     solutionImage2Title: "Maintenance services",
     solutionImage2Desc:
       "As your business grows, maintaining and updating your online presence can become challenging. We offer ongoing support during and after the project to ensure your digital assets stay effective.",
@@ -309,7 +309,7 @@ export const servicesData = [
       "SEO optimization",
       "User-friendly management",
     ],
-    solutionImage3: "/img/service-page/web-maintenance.png",
+    solutionImage3: "/img/web-maintenance-detail/webmaintenance-img-comp-3.png",
     solutionImage3Title: "SEO service",
     solutionImage3Desc:
       "Our SEO services are designed to improve your website’s visibility and drive more organic traffic. We start with a comprehensive audit to identify areas for optimization, then implement on-page and technical SEO strategies tailored to your business.",
