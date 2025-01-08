@@ -68,7 +68,7 @@ const Footer = () => {
             achieving common goals.
           </p>
           <div className="flex gap-7">
-            <Button className="border-2 text-sm">Webteck@gmail.com</Button>
+            <Button className="border-2 text-normal"><a href="mailto:vancouver.webteck@gmail.com">Vancouver.Webteck@gmail.com</a></Button>
             <Button className="border-2 text-sm">+1 (778) 318 8494</Button>
           </div>
         </div>
@@ -101,7 +101,7 @@ const Footer = () => {
 
       <div className="flex justify-between pb-5">
         <p>Copyright Vancouver WebTeck 2024</p>
-        <Link href="">Privacy Policy</Link>
+        <Link href="./privacy-policy">Privacy Policy</Link>
       </div>
     </footer>
   );
