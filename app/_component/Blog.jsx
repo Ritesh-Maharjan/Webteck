@@ -1,5 +1,6 @@
 import React from "react";
 import HeadingTitle from "./ui/HeadingTitle";
+import Link from 'next/link';
 
 
 
@@ -22,16 +23,42 @@ const Blog = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="flex flex-col gap-5">
-            <img src="/img/home-page/blog-1.png" 
+            <img src="/img/blog-page/test-run-1.jpg" 
                 alt="How to Craft they Winning Socials Media Strategy from Scratch" 
                 height={255} 
                 width={382}
-                className="w-full" 
+                className="w-full h-[183px]"
+            />
+            <h3 className="text-lg md:text-xl">Why SEO Matter</h3>
+            <div className=" flex flex-col gap-5">
+              <blockquote className="text-normal text-[#818181]">
+                “SEO, or Search Engine Optimization, involves optimizing your website to improve its visibility in search engine results, ensuring it reaches a broader audience. The goal is to rank higher organically—without relying on paid advertisements—by meeting the criteria search engines like Google use to evaluate content.
+              </blockquote>
+
+              <div className="flex items-center justify-end gap-1">
+                <img 
+                    src="/img/home-page/whatweoffer-arrow-right.png" 
+                    height={24} 
+                    width={24} 
+                    alt="Left arrow" 
+                />
+                <Link href="/blog/test-run">
+                  <p className="text-sm uppercase">Read More</p>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-5">
+            <img src="/img/blog-page/test-run-2.png" 
+                alt="Why a Modern Website is Essential for Your Business in 2025" 
+                height={255} 
+                width={382}
+                className="w-full h-[183px]"
             />
             <h3 className="text-lg md:text-xl">Why a Modern Website is Essential for Your Business in 2025</h3>
             <div className=" flex flex-col gap-5">
               <blockquote className="text-normal text-[#818181]">
-                “In today’s fast-paced digital world, having a modern, up-to-date website is no longer a luxury—it’s a necessity. With technology evolving rapidly and customer expectations at an all-time high.
+                “In today’s competitive digital landscape, your website is more than just an online presence—it’s the cornerstone of your business success. A modern, well-optimized website can act as your best salesperson, working tirelessly 24/7 to attract leads, build trust, and drive conversions.
               </blockquote>
 
               <div className="flex items-center justify-end gap-1">
@@ -41,18 +68,19 @@ const Blog = () => {
                     width={24} 
                     alt="Left arrow" 
                 />
-                <a href="#" className="text-sm uppercase">Read More</a>
+                <Link href="/blog/test-run-2">
+                  <p className="text-sm uppercase">Read More</p>
+                </Link>
               </div>
             </div>
           </div>
           <div className="flex flex-col gap-5">
-            <img src="/img/home-page/blog-1.png" 
+            <img src="/img/blog-page/test-run-3.png" 
                 alt="How to Craft they Winning Socials Media Strategy from Scratch" 
-                height={255} 
-                width={382}
-                className="w-full"
+                className="w-full h-[183px]"
             />
-            <h3 className="text-lg md:text-xl">How to Craft they Winning Socials Media Strategy from Scratch</h3>
+            <h3 className="text-lg md:text-xl">How Vancouver WebTeck Can Turn Your Website Into Your Best Salesperson in 2025
+            </h3>
             <div className=" flex flex-col gap-5">
               <blockquote className="text-normal text-[#818181]">
                 “In today’s fast-paced digital world, having a modern, up-to-date website is no longer a luxury—it’s a necessity. With technology evolving rapidly and customer expectations at an all-time high.
@@ -65,31 +93,9 @@ const Blog = () => {
                     width={24} 
                     alt="Left arrow" 
                 />
-                <a href="#" className="text-sm uppercase">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col gap-5">
-            <img src="/img/home-page/blog-1.png" 
-                alt="How to Craft they Winning Socials Media Strategy from Scratch" 
-                height={255} 
-                width={382}
-                className="w-full"
-            />
-            <h3 className="text-lg md:text-xl">How to Craft they Winning Socials Media Strategy from Scratch</h3>
-            <div className=" flex flex-col gap-5">
-              <blockquote className="text-normal text-[#818181]">
-                “In today’s fast-paced digital world, having a modern, up-to-date website is no longer a luxury—it’s a necessity. With technology evolving rapidly and customer expectations at an all-time high.
-              </blockquote>
-
-              <div className="flex items-center justify-end gap-1">
-                <img 
-                    src="/img/home-page/whatweoffer-arrow-right.png" 
-                    height={24} 
-                    width={24} 
-                    alt="Left arrow" 
-                />
-                <a href="#" className="text-sm uppercase">Read More</a>
+                <Link href="/blog/test-run-3">
+                  <p className="text-sm uppercase">Read More</p>
+                </Link>
               </div>
             </div>
           </div>

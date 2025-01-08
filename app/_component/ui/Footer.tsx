@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
 
         <div className="flex gap-8">
-          <a href="">
+          <a href="https://www.facebook.com/profile.php?id=61560885556030" target="_blank" rel="noopener noreferrer">
             <Image
               src="/img/home-page/footer-fb.png"
               alt="facebook logo"
@@ -28,7 +28,7 @@ const Footer = () => {
               width={31}
             />
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/vancouver_webteck/?fbclid=IwZXh0bgNhZW0CMTEAAR0ysPVsce9W0U8bi4dMWc4Ugz_8LAZkjFC_gDQsW86g09ERkcTsK92qjzg_aem_xjJ5xnEzC1u3WdJ_oACvFg" target="_blank" rel="noopener noreferrer">
             <Image
               src="/img/home-page/footer-instagram.png"
               alt="instragram logo"
@@ -36,7 +36,7 @@ const Footer = () => {
               width={31}
             />
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/company/vancouver-webteck" target="_blank" rel="noopener noreferrer">
             <Image
               src="/img/home-page/footer-linkedin.png"
               alt="linkedin logo"
@@ -76,24 +76,36 @@ const Footer = () => {
           <h3 className="font-bold text-2xl">Quick Links</h3>
           <nav>
             <ul className="grid grid-cols-3 md:grid-cols-2 gap-x-20 gap-y-2">
-              <li>
-                <a href="">Home</a>
-              </li>
-              <li>
-                <a href="">Services</a>
-              </li>
-              <li>
-                <a href="">Web Development</a>
-              </li>
-              <li>
-                <a href="">Web Maintenance</a>
-              </li>
-              <li>
-                <a href="">UI/UX</a>
-              </li>
-              <li>
-                <a href="">Contact</a>
-              </li>
+            <li>
+              <Link href="/home">
+                <p>Home</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/service">
+                <p>Services</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/service/web-development">
+                <p>Web Development</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/service/web-maintenance">
+                <p>Web Maintenance</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/service/UI-UX">
+                <p>UI/UX</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact">
+                <p>Contact</p>
+              </Link>
+            </li>
             </ul>
           </nav>
         </div>
