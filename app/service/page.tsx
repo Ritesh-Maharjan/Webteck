@@ -28,10 +28,10 @@ export default function ServicePage() {
               </HeadingTitle>
             </div>
             <div className="mt-4 w-[418px]">
-              <p className="text-2xl text-[#DBDBDB] text-left relative z-10">
-                Our extensive knowledge in design and technology brings forth
-                leading brands and digital journeys.
-              </p>
+								<p className="text-2xl text-[#DBDBDB] text-left relative z-10 max-w-full sm:w-[300px]">
+								Our extensive knowledge in design and technology brings forth
+								leading brands and digital journeys.
+								</p>
             </div>
           </div>
           <div className="relative z-10">

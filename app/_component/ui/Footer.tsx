@@ -67,7 +67,7 @@ const Footer = () => {
             communication, mutual understanding, and a shared commitment to
             achieving common goals.
           </p>
-          <div className="flex gap-7">
+          <div className="flex flex-col lg:flex-row gap-7">
             <Button className="border-2 text-normal"><a href="mailto:vancouver.webteck@gmail.com">Vancouver.Webteck@gmail.com</a></Button>
             <Button className="border-2 text-sm">+1 (778) 318 8494</Button>
           </div>
