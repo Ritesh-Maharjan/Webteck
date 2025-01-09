@@ -8,7 +8,7 @@ import Accordion from "../../_component/ui/Accordion";
 import HeadingTitle from "@/_component/ui/HeadingTitle";
 import Button from "@/_component/ui/Button";
 import InfoCard from "@/_component/ui/InfoCard";
-// singles service page dynamically generated
+
 export function ServiceFaq({ category }: { category: string }) {
   const [activeAccordion, setActiveAccordion] = useState<string | null>(null);
 
@@ -29,11 +29,6 @@ export function ServiceFaq({ category }: { category: string }) {
             />
           ))}
       </div>
-			<div className="text-black">
-				<h3>Have More Questions?</h3>
-				<p>If you have additional questions, feel free to reach out.</p>
-				<button>penis</button>
-			</div>
     </div>
   );
 }
@@ -63,7 +58,7 @@ export default function ServicePage({
       >
         <Image
           src={service ? service.bgImage : ""}
-          alt={service ? service.infoTitle : ""}
+          alt={service ? service.infoTitle : "service-image"}
           height={100}
           width={100}
           className="absolute top-0 w-full -z-10"
@@ -109,19 +104,19 @@ export default function ServicePage({
           {service?.detailTitle}
         </h2>
         <div className="max-w-[800px] mx-auto px-4 flex flex-col gap-14 pb-24">
-          <div className="flex flex-col items-center md:flex-row gap-10">
-            <Image
-              src={service?.solutionImage1 || "/default-image.png"}
-              alt={service?.solutionImage1Title || "Default Alt Text"}
-              width={500}
-              height={500}
-              className="flex-1 w-full"
-            />
+						<div className="max-w-full md:max-w-[300px] flex flex-col items-center md:flex-row gap-10">
+						<Image
+							src={service?.solutionImage1 || "/default-image.png"}
+							alt={service?.solutionImage1Title || "Default Alt Text"}
+							width={500}
+							height={500}
+							className="flex-1 w-full"
+						/>
             <div className="flex-1 flex flex-col gap-4">
-              <h3 className="text-2xl font-bold">
+								<h3 className="text-2xl font-bold max-w-full md:max-w-[300px]">
                 {service?.solutionImage1Title}
               </h3>
-              <p>{service?.solutionImage1Desc}</p>
+								<p>{service?.solutionImage1Desc}</p>
               <ul>
                 {service?.bulletPoints1.map((point, index) => (
                   <li className="list-disc" key={index}>
@@ -160,7 +155,7 @@ export default function ServicePage({
               className="flex-1 w-full"
             />
             <div className="flex-1 flex flex-col gap-4">
-              <h3  className="text-2xl font-bold">{service?.solutionImage3Title}</h3>
+              <h3 className="text-2xl font-bold">{service?.solutionImage3Title}</h3>
               <p>{service?.solutionImage3Desc}</p>
               <ul>
                 {service?.bulletPoints3.map((point, index) => (
@@ -172,7 +167,7 @@ export default function ServicePage({
             </div>
           </div>
         </div>
-		
+        
         <ServiceFaq category={serviceId || "default-category"} />
       </section>
     </>
