@@ -9,7 +9,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 200); 
+      setIsScrolled(window.scrollY > 0); 
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -25,11 +25,15 @@ const Header = () => {
 
   return (
     <header
-      className={`z-10 h-auto flex items-center sticky top-0 transition-all duration-200 ${
+      className={`z-10 h-auto flex items-center absolute top-0 w-full transition-all duration-200 ${
         isScrolled
           ? "bg-white backdrop-blur-md shadow-md text-black"
           : "bg-transparent text-white"
       }`}
+      style={{
+        position: isScrolled ? "sticky" : "absolute",
+        top: 0,
+      }}
     >
       <div className="max-w-screen-2xl w-full mx-auto flex justify-between items-center p-4">
         {/* Logo Section */}
@@ -56,15 +60,19 @@ const Header = () => {
               <li key={item.name} className="relative group">
                 <Link
                   href={item.link}
-                  className="transition-colors duration-300"
+                  className={`relative ${
+                    isScrolled ? "text-black" : "text-white"
+                  } px-2 py-2 transition-colors duration-500 group`}
                 >
                   {item.name}
+                  <span
+                    className={`absolute bottom-0 left-0 w-full h-[2px] ${
+                      isScrolled
+                        ? "bg-gradient-to-r from-transparent via-black to-transparent"
+                        : "bg-gradient-to-r from-transparent via-white to-transparent"
+                    } opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-hover:animate-shimmer`}
+                  ></span>
                 </Link>
-                <span
-                  className={`absolute left-0 bottom-0 w-0 h-0.5 ${
-                    isScrolled ? "bg-black" : "bg-white"
-                  } transition-all duration-300 group-hover:w-full`}
-                ></span>
               </li>
             ))}
           </ul>
@@ -113,14 +121,14 @@ const Header = () => {
       {isMenuOpen && (
         <nav className="md:hidden absolute top-full left-0 pt-10 w-full bg-black shadow-md">
           <ul className="flex items-center flex-col gap-4 p-4 text-white ">
-            {["Home", "Service", "Pricing", "Contact"].map((item) => (
-              <li key={item}>
+            {navItems.map((item) => (
+              <li key={item.name}>
                 <Link
-                  href={`/${item.toLowerCase()}`}
+                  href={item.link}
                   className="block text-2xl transition-colors duration-300 hover:text-[#7A58FF]"
                   onClick={() => setIsMenuOpen(false)} // Close menu on link click
                 >
-                  {item}
+                  {item.name}
                 </Link>
               </li>
             ))}

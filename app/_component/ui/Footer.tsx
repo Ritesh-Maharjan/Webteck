@@ -68,8 +68,8 @@ const Footer = () => {
             achieving common goals.
           </p>
           <div className="flex flex-col lg:flex-row gap-7">
-            <Button className="border-2 text-normal"><a href="mailto:vancouver.webteck@gmail.com">Vancouver.Webteck@gmail.com</a></Button>
-            <Button className="border-2 text-sm">+1 (778) 318 8494</Button>
+            <Button className="border-2 text-normal transition duration-10 ease-in-out text-white hover:text-[#7A58FF] hover:border-[#7A58FF]"><a href="mailto:vancouver.webteck@gmail.com">Vancouver.Webteck@gmail.com</a></Button>
+            <Button className="border-2 text-sm transition duration-10 ease-in-out text-white hover:text-[#7A58FF] hover:border-[#7A58FF]">+1 (778) 318 8494</Button>
           </div>
         </div>
         <div className="flex flex-col gap-12">
@@ -78,32 +78,32 @@ const Footer = () => {
             <ul className="grid grid-cols-3 md:grid-cols-2 gap-x-20 gap-y-2">
             <li>
               <Link href="/home">
-                <p>Home</p>
+                <p className="transition duration-10 ease-in-out text-white hover:text-[#7A58FF] hover:border-[#7A58FF]">Home</p>
               </Link>
             </li>
             <li>
               <Link href="/service">
-                <p>Services</p>
+                <p className="transition duration-10 ease-in-out text-white hover:text-[#7A58FF] hover:border-[#7A58FF]">Services</p>
               </Link>
             </li>
             <li>
               <Link href="/service/web-development">
-                <p>Web Development</p>
+                <p className="transition duration-10 ease-in-out text-white hover:text-[#7A58FF] hover:border-[#7A58FF]">Web Development</p>
               </Link>
             </li>
             <li>
               <Link href="/service/web-maintenance">
-                <p>Web Maintenance</p>
+                <p className="transition duration-10 ease-in-out text-white hover:text-[#7A58FF] hover:border-[#7A58FF]">Web Maintenance</p>
               </Link>
             </li>
             <li>
               <Link href="/service/UI-UX">
-                <p>UI/UX</p>
+                <p className="transition duration-10 ease-in-out text-white hover:text-[#7A58FF] hover:border-[#7A58FF]">UI/UX</p>
               </Link>
             </li>
             <li>
               <Link href="/contact">
-                <p>Contact</p>
+                <p className="transition duration-10 ease-in-out text-white hover:text-[#7A58FF] hover:border-[#7A58FF]">Contact</p>
               </Link>
             </li>
             </ul>
@@ -113,7 +113,7 @@ const Footer = () => {
 
       <div className="flex justify-between pb-5">
         <p>Copyright Vancouver WebTeck 2024</p>
-        <Link href="./privacy-policy">Privacy Policy</Link>
+        <Link href="./privacy-policy" className="transition duration-10 ease-in-out text-white hover:text-[#7A58FF] hover:border-[#7A58FF]">Privacy Policy</Link>
       </div>
     </footer>
   );

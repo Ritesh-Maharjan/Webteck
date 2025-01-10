@@ -20,7 +20,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       type={type}
       onClick={onClick}
-      className={`btn py-3 px-6 rounded-full ${className}`} // Default class with optional additional classes
+      className={`btn py-3 px-6 rounded-full ${className}`} 
     >
       {children}
     </button>

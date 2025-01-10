@@ -156,7 +156,7 @@ const ContactForm = () => {
 
       <div className="flex gap-4 mt-4">
         <button
-          className="w-fit border py-3 px-6 rounded-full"
+          className="w-fit border py-3 px-6 rounded-full transition duration-10 ease-in-out text-white hover:text-[#7A58FF] hover:border-[#7A58FF]"
           type="submit"
           disabled={isSubmitting}
         >

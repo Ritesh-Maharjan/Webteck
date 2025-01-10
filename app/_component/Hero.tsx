@@ -31,9 +31,9 @@ const Hero = () => {
             >
               Book a call
             </a>
-            <p className="flex flex-col gap-2">
+            <p className="flex flex-col gap-1">
               <span className="text-[#CDCDCD] text-sm">Have a question?</span>
-              <span className="text-white text-sm font-semibold">Schedule
+              <span className="text-white text-normal font-semibold">Schedule
               an appointment.</span>
             </p>
           </div>

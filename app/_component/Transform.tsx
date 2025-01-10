@@ -17,7 +17,7 @@ const Transform = () => {
          Get $100 credit for every successful referral, and your friend gets 10% off their first project!
         </p>
         <Link href="/contact">
-          <Button className="border w-fit">Start a Project</Button>
+          <Button className="border w-fit text-white hover:text-[#7A58FF] hover:border-[#7A58FF] transition duration-10 ease-in-out">Start a Project</Button>
         </Link>
        
       </div>

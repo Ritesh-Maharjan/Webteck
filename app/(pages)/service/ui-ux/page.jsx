@@ -1,163 +1,165 @@
 "use client";
 
-
-import React, { useState } from "react";  // Add useState
+import React, { useState } from "react";  
 import Link from "next/link";
 import InfoCard from "../../../_component/ui/InfoCard";
 import ContactForm from "../../../_component/contactpage/ContactForm";
 import HeadingTitle from "../../../_component/ui/HeadingTitle";
 import Accordion from "../../../_component/ui/Accordion";
 import Button from "../../../_component/ui/Button";
+import { Transform } from "@/_component";
 
 const accordionItems = [
     {
       id: "item-1",
-      title: "How long does it take to build a website?",
+      title: "What is UI/UX design, and why is it important?",
       content: (
         <>
           <p>
-            The timeline for building a website depends on the complexity and
-            features required. <br />
-            We will provide a detailed project timeline after understanding your
-            specific requirements.
+          UI (User Interface) design focuses on the look and feel of your product, while UX (User Experience) design is about how users interact with it. <br></br>Together, they ensure your product is both visually appealing and easy to use, which is critical for user satisfaction and business success.
           </p>
-          <ul>
-            <li>Landing page - 10 days. </li>
-            <li>Basic website - 21 days.</li>
-            <li>Corporate website - 3 months.</li>
-          </ul>
         </>
       ),
     },
     {
       id: "item-2",
-      title: "What’s included in each pricing plan?",
+      title: "How long does the UI/UX design process take?",
       content: (
         <>
           <p>
-            Each plan includes essential services tailored to different needs. 
-            The Basic plan covers foundational support, while the Standard and 
-            Premium plans offer enhanced features such as performance monitoring, 
-            regular updates, and dedicated support. For detailed inclusions, 
-            please refer to the plan comparison chart.
+          The timeline varies depending on the scope of the project. For most projects, the design process can take anywhere from 4 to 8 weeks. We provide a detailed timeline after reviewing your specific needs and goals.
           </p>
         </>
       ),
     },
     {
       id: "item-3",
-      title: "Can I change my plan later?",
+      title: " What is your approach to user research?",
       content: (
         <>
           <p>
-            Yes, you can upgrade or downgrade your plan at any time to better suit 
-            your needs. Simply contact us, and we’ll assist with the transition to 
-            a new plan.
+          We begin every project with thorough user research, including surveys, interviews, and competitive analysis. This helps us understand your target audience and their needs, ensuring that our design solutions are aligned with user expectations and business goals.
           </p>
         </>
       ),
     },
     {
       id: "item-4",
-      title: "Are there any setup fees or hidden charges?",
+      title: "Will I be involved in the design process?",
       content: (
         <>
           <p>
-            No, we believe in transparent pricing with no hidden fees. All costs 
-            are outlined in the plan details, so you’ll know exactly what to expect.
+          Absolutely! We value collaboration and ensure that your feedback is integrated at every stage. From initial wireframes to final prototypes, we keep you involved and informed throughout the process.
           </p>
         </>
       ),
     },
     {
       id: "item-5",
-      title: "Do you offer custom pricing for larger projects?",
+      title: "Can you redesign an existing website or app?",
       content: (
         <>
           <p>
-            Absolutely. If your project requires additional support or custom 
-            features, please reach out, and we’ll create a tailored plan to meet 
-            your needs.
+          Yes, we can help redesign your current website or app to improve user experience, update the visual design, or better align with your business objectives. We assess the current design and suggest improvements based on user needs and modern design trends.
           </p>
         </>
       ),
     },
     {
       id: "item-6",
-      title: "What payment methods do you accept?",
+      title: "How do you ensure the design is user-friendly?",
       content: (
         <>
           <p>
-            We accept various payment methods, including credit cards, debit cards, 
-            and direct bank transfers, for your convenience.
+          We follow a user-centered design approach, conducting usability testing and collecting feedback throughout the design process. This allows us to identify any potential issues early on and ensure a smooth and intuitive user experience.
           </p>
         </>
       ),
     },
     {
       id: "item-7",
-      title: "Is there a contract commitment?",
+      title: "Do you provide prototyping and user testing?",
       content: (
         <>
           <p>
-            We offer both monthly and annual options. You’re free to choose the 
-            commitment level that best fits your needs, and you can cancel anytime 
-            with a month’s notice.
+          Yes, we create interactive prototypes that simulate the final product, allowing you and real users to test the interface. We gather feedback, make adjustments, and refine the design to ensure it meets both your needs and user expectations.
           </p>
         </>
       ),
     },
     {
       id: "item-8",
-      title: "What if I need help choosing the right plan?",
+      title: "What tools do you use for UI/UX design?",
       content: (
         <>
           <p>
-            We’re here to help! Feel free to reach out, and our team will assist 
-            you in selecting the plan that aligns with your business goals and budget.
+          We use industry-standard tools like Figma, Sketch, and Adobe XD for design and prototyping. These tools allow for seamless collaboration and provide a clear visual representation of the final product.
           </p>
         </>
       ),
     },
+    {
+        id: "item-9",
+        title: "How much does UI/UX design cost?",
+        content: (
+          <>
+            <p>
+            The cost varies depending on the complexity of the project. After an initial consultation to understand your needs, we provide a customized quote that reflects the scope and timeline of the work.
+            </p>
+          </>
+        ),
+      },
+      {
+        id: "item-10",
+        title: "What happens after the design is complete?",
+        content: (
+          <>
+            <p>
+            After the design phase, we can work with your development team or provide ongoing support to ensure the design is implemented correctly. We also offer maintenance services to help refine and update the design as your product evolves.
+            </p>
+          </>
+        ),
+      },
   ];
 const UiUxPage = () => {
-    const backgroundColor = true; // Example condition, replace with your actual logic
-    const [activeAccordion, setActiveAccordion] = useState(null); // Define state
+    const backgroundColor = true; 
+    const [activeAccordion, setActiveAccordion] = useState(null); 
 
     return (
-        <div className="bg-[url('/img/uiux-detail/uiux-bg.png')] bg-cover bg-center text-white">
-            <header className="text-center py-20">
-                <div className="flex flex-col text-center gap-10">
-                    <h1 className="text-5xl font-bold mb-4 md:text-8xl">UI/UX design service</h1>
-                    <p className="text-lg max-w-2xl mx-auto mb-4 md:text-2xl">
-                        From wireframes to polished interfaces, we ensure seamless user experiences, allowing users to navigate effortlessly and enjoy the digital journey.
+        <div>
+            <div className=" relative bg-[url('/img/uiux-detail/uiux-bg.png')] bg-cover bg-center text-white">
+                <header className="text-center pb-20 pt-60">
+                    <div className="flex flex-col text-center gap-10">
+                        <h1 className="text-5xl font-bold mb-4 md:text-8xl">UI/UX design service</h1>
+                        <p className="text-lg max-w-2xl mx-auto mb-4 md:text-2xl">
+                            From wireframes to polished interfaces, we ensure seamless user experiences, allowing users to navigate effortlessly and enjoy the digital journey.
+                        </p>
+                        <button
+                            className={`hidden md:flex items-center justify-center rounded-3xl border py-2 px-4 font-medium text-lg transition duration-10 ease-in-out text-center mx-auto hover:text-[#7A58FF] hover:border-[#7A58FF] gap-2`}
+                        >
+                            <Link href="/contact">
+                                Start a Project
+                            </Link>
+                            <img 
+                                src="/img/uiux-detail/question-answer-icon.png" 
+                                alt="Question Answer Icon" 
+                                className="ml-1 hover:text-[#7A58FF] hover:border-[#7A58FF]" 
+                            />
+                        </button>
+                    </div>
+                </header>
+
+                <div className="p-6 md:p-10 flex flex-col text-center gap-6 md:flex-row md:text-left md:items-center justify-between md:mx-20 lg:mx-60 md:gap-10">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
+                        Our attentive approach to UI/UX design
+                    </h2>
+                    <p className="text-sm sm:text-base md:text-lg leading-relaxed max-w-xl">
+                        With over 10 years of experience, our professional UI/UX design service goes beyond aesthetics, focusing on user-centred processes. Every design element is crafted to engage your target audience and communicate your unique selling points effectively.
                     </p>
-                    <button
-                        className={`hidden md:flex items-center justify-center rounded-3xl border py-2 px-4 font-medium text-lg transition duration-10 ease-in-out text-center mx-auto hover:text-[#7A58FF] hover:border-[#7A58FF] gap-2`}
-                    >
-                        <Link href="/contact">
-                            Start a Project
-                        </Link>
-                        <img 
-                            src="/img/uiux-detail/question-answer-icon.png" 
-                            alt="Question Answer Icon" 
-                            className="ml-1 hover:text-[#7A58FF] hover:border-[#7A58FF]" 
-                        />
-                    </button>
                 </div>
-            </header>
-
-            <div className="p-6 md:p-10 flex flex-col text-center gap-6 md:flex-row md:text-left md:items-center justify-between md:mx-20 lg:mx-60 md:gap-10">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
-                    Our attentive approach to UI/UX design
-                </h2>
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed max-w-xl">
-                    With over 10 years of experience, our professional UI/UX design service goes beyond aesthetics, focusing on user-centred processes. Every design element is crafted to engage your target audience and communicate your unique selling points effectively.
-                </p>
             </div>
-
            {/* InfoCard Component */}
-            <div className="flex justify-center items-center min-h-screen py-40">
+            <div className="flex justify-center items-center min-h-screen pt-40 pb-20">
                 <div className="flex flex-col gap-8">
                     {/* Row 1 and Row 2 Combined */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
@@ -207,7 +209,7 @@ const UiUxPage = () => {
                 </div>
             </div>
             <section
-                className="w-full h-3"
+                className="w-full h-2"
                 style={{
                     background: backgroundColor
                         ? "linear-gradient(to right, #ffffff 0%, #A1A1A1 10%, #555555 100%)"
@@ -295,48 +297,51 @@ const UiUxPage = () => {
                     <ContactForm />
                 </div>
             </div>
+                
+            <div id="" className="bg-white text-black overflow-hidden relative py-24 mt-32 before:absolute before:top-0 before:left-0 before:right-0 before:h-2 before:w-full before:inline-block before:bg-gradient-to-r before:from-[#D9D9D9] before:to-[#888888] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-2 after:w-full after:inline-block after:bg-gradient-to-r after:from-[#D9D9D9] after:to-[#888888]">
+                
+                {/* FAQ section */}
+                <div className="max-w-screen-2xl mx-auto flex flex-col gap-20 px-8">
+                    <div className="mb-10 flex flex-col gap-2">
+                        <h3 className="font-bold text-5xl">Frequently Asked Questions</h3>
+                        <p className="text-[#888888]">Some common questions and answers</p>
+                    </div>
 
+                    {/* Accordion Container*/}
+                    <div className="flex flex-col gap-2">
+                        {accordionItems.map((el) => (
+                        <Accordion
+                            key={el.id}
+                            id={el.id}
+                            title={el.title}
+                            content={el.content}
+                            activeAccordion={activeAccordion}
+                            setActiveAccordion={setActiveAccordion}
+                        />
+                        ))}
+                    </div>
+                </div>
+
+                <div className="max-w-screen-2xl mx-auto px-8 pt-12 flex flex-col gap-5">
+                    <p className="flex flex-col gap-1 text-3xl">
+                        Have more questions?
+                        <span className="text-xl">
+                        If you have additional questions, feel free to reach out.
+                        </span>
+                    </p>
+                    <Link href="/contact">
+                        <Button className="border uppercase font-bold w-fit transition duration-10 ease-in-out border-[#CDCDCD] text-black hover:text-[#7A58FF] hover:border-[#7A58FF]">
+                        Contact Us
+                        </Button>
+                    </Link>
+                </div>
+            </div>
             <div>
-
-            <section id="" className="bg-white text-black overflow-hidden relative py-24 mt-32 before:absolute before:top-0 before:left-0 before:right-0 before:h-2 before:w-full before:inline-block before:bg-gradient-to-r before:from-[#D9D9D9] before:to-[#888888] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-2 after:w-full after:inline-block after:bg-gradient-to-r after:from-[#D9D9D9] after:to-[#888888]">{/* FAQ section */}
-            <div className="max-w-screen-2xl mx-auto flex flex-col gap-20 px-8">
-                <div className="mb-10 flex flex-col gap-2">
-                    <h3 className="font-bold text-5xl">Frequently Asked Questions</h3>
-                    <p className="text-[#888888]">Some common questions and answers</p>
-                </div>
-
-                {/* Accordion Container*/}
-                <div className="flex flex-col gap-2">
-                    {accordionItems.map((el) => (
-                    <Accordion
-                        key={el.id}
-                        id={el.id}
-                        title={el.title}
-                        content={el.content}
-                        activeAccordion={activeAccordion}
-                        setActiveAccordion={setActiveAccordion}
-                    />
-                    ))}
-                </div>
+                <Transform />
             </div>
-
-            <div className="flex flex-col gap-5">
-                <p className="flex flex-col gap-1 text-3xl">
-                    Have more questions?
-                    <span className="text-xl">
-                    If you have additional questions, feel free to reach out.
-                    </span>
-                </p>
-                <Link href="/contact">
-                    <Button className="border uppercase font-bold w-fit">
-                    Contact Us
-                    </Button>
-                </Link>
-                </div>
-            </div>
-            </section>
             
 
+        
         </div>
     );
 };
