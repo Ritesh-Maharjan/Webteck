@@ -9,7 +9,7 @@ export default function ServicePage() {
   return (
     //THIS IS THE SERVICE PAGE MAIN
     <main className="w-full">
-      <section className="hero-section relative w-full z-0">
+      <section className="hero-section relative w-full z-0 mx-auto">
         <Image
           src="/img/service-page/service-hero-bg.png"
           alt="Hero Image"
