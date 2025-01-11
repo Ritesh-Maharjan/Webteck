@@ -96,6 +96,7 @@ export const servicesData = [
     //UI/UX design service MAIN DATA
     id: "ui-ux-design",
     serviceNum: 2,
+		title: "UI/UX Design Service",
     fullDescription:
       "Your website's or product's experience can make or break your results. We make sure you stay ahead of the competition with custom design that is intuitive, modern and resonates with your target audience.",
     features: [
@@ -295,12 +296,12 @@ export const servicesData = [
       },
     ],
     detailTitle: "Web development solutions",
-    solutionImage1: "/img/web-maintenance-detail/webmaintenance-img-comp-1.png",
+    solutionImage1: "/img/web-maintenance-detail/webmaintanence-img-comp-1.png",
     solutionImage1Title: "Web Development",
     solutionImage1Desc:
       "We bring the most amazing designs into customized live web solutions. Through a detailed process, we ensure a seamless user experience, lighting fast speed, everything for a great SEO start, and a web system that any of your colleagues can manage.",
     bulletPoints1: [],
-    solutionImage2: "/img/web-maintenance-detail/webmaintenance-img-comp-2.png",
+    solutionImage2: "/img/web-maintenance-detail/webmaintanence-img-comp-2.png",
     solutionImage2Title: "Maintenance services",
     solutionImage2Desc:
       "As your business grows, maintaining and updating your online presence can become challenging. We offer ongoing support during and after the project to ensure your digital assets stay effective.",
@@ -309,7 +310,7 @@ export const servicesData = [
       "SEO optimization",
       "User-friendly management",
     ],
-    solutionImage3: "/img/web-maintenance-detail/webmaintenance-img-comp-3.png",
+    solutionImage3: "/img/web-maintenance-detail/webmaintanence-img-comp-3.png",
     solutionImage3Title: "SEO service",
     solutionImage3Desc:
       "Our SEO services are designed to improve your website’s visibility and drive more organic traffic. We start with a comprehensive audit to identify areas for optimization, then implement on-page and technical SEO strategies tailored to your business.",

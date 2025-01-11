@@ -56,13 +56,14 @@ export default function ServicePage({
       <section
         className={`min-h-[calc(100vh-80px)] max-w-screen-2xl px-4 flex flex-col justify-center items-center `}
       >
+				{service?.bgImage &&
         <Image
-          src={service ? service.bgImage : ""}
+          src={service ? service.bgImage : "/default-image.png"}
           alt={service ? service.infoTitle : "service-image"}
           height={100}
           width={100}
           className="absolute top-0 w-full -z-10"
-        />
+        />}
         <div className="flex flex-col items-center gap-5">
           <HeadingTitle
             as="h1"
@@ -113,10 +114,10 @@ export default function ServicePage({
 							className="flex-1 w-full"
 						/>
             <div className="flex-1 flex flex-col gap-4">
-								<h3 className="text-2xl font-bold max-w-full md:max-w-[300px]">
+              <h3 className="text-2xl font-bold">
                 {service?.solutionImage1Title}
               </h3>
-								<p>{service?.solutionImage1Desc}</p>
+								<p className="max-w-full md:max-w-[300px]">{service?.solutionImage1Desc}</p>
               <ul>
                 {service?.bulletPoints1.map((point, index) => (
                   <li className="list-disc" key={index}>

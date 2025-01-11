@@ -28,7 +28,7 @@ const ServiceCard = ({ service, index }: { service: any; index: number }) => {
       <div className="w-full md:w-[450px] shrink-0 h-full">
         <Image
           src={service?.image}
-          alt={service?.title}
+          alt={service?.title || "Default Alt Text"}
           width={450}
           height={500}
           className="w-full h-full"
