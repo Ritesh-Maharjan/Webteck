@@ -8,7 +8,7 @@ const page = () => {
   return (
     <>
       <div className="bg-[url('/img/contact-page/contact-bg.png')] bg-cover min-h-screen">
-        <div className="max-w-screen-xl mx-auto px-8 grid py-20 md:grid-cols-6 gap-y-10">
+        <div className="max-w-screen-xl mx-auto px-8 grid py-20 md:grid-cols-6 gap-y-10 md:mt-20">
           <div className="flex flex-col gap-6 justify-between md:col-span-3">
             <HeadingTitle as="h1" className="w-fit">
               Let&apos;s work together
