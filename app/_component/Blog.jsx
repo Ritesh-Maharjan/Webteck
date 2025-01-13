@@ -27,7 +27,7 @@ const Blog = () => {
                 alt="How to Craft they Winning Socials Media Strategy from Scratch" 
                 height={255} 
                 width={382}
-                className="w-full h-[183px]"
+                className="w-full h-[230px]"
             />
             <h3 className="text-lg md:text-xl">Why SEO Matter</h3>
             <div className=" flex flex-col gap-5">
@@ -53,7 +53,7 @@ const Blog = () => {
                 alt="Why a Modern Website is Essential for Your Business in 2025" 
                 height={255} 
                 width={382}
-                className="w-full h-[183px]"
+                className="w-full h-[230px]"
             />
             <h3 className="text-lg md:text-xl">Why a Modern Website is Essential for Your Business in 2025</h3>
             <div className=" flex flex-col gap-5">
@@ -77,7 +77,7 @@ const Blog = () => {
           <div className="flex flex-col gap-5">
             <img src="/img/blog-page/test-run-3.png" 
                 alt="How to Craft they Winning Socials Media Strategy from Scratch" 
-                className="w-full h-[183px]"
+                className="w-full h-[230px]"
             />
             <h3 className="text-lg md:text-xl">How Vancouver WebTeck Can Turn Your Website Into Your Best Salesperson in 2025
             </h3>
