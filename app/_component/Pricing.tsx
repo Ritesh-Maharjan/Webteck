@@ -204,9 +204,9 @@ const Pricing = () => {
                 </h3>
                 <p className="font-bold">
                   CA$20-$80
-                  <span className="text-[#888888] font-normal">/month</span>
+                  <span className="text-[#636262] font-normal">/month</span>
                 </p>
-                <p className="text-[#888888]">
+                <p className="text-[#636262]">
                   Provides essential updates, security patches, and 2 hours of
                   content changes to keep your website secure and up-to-date.
                 </p>
@@ -303,9 +303,9 @@ const Pricing = () => {
                 </h3>
                 <p className="font-bold">
                   CA$100-$250
-                  <span className="text-[#888888] font-normal">/month</span>
+                  <span className="text-[#636262] font-normal">/month</span>
                 </p>
-                <p className="text-[#888888]">
+                <p className="text-[#636262]">
                   Includes regular updates, security monitoring, performance
                   optimization, and 5 hours of content or design adjustments to
                   ensure your website runs smoothly and stays updated.
@@ -433,9 +433,9 @@ const Pricing = () => {
                 </h3>
                 <p className="font-bold">
                   CA$300-$500
-                  <span className="text-[#888888] font-normal">/month</span>
+                  <span className="text-[#636262] font-normal">/month</span>
                 </p>
-                <p className="text-[#888888]">
+                <p className="text-[#636262]">
                   Provides essential updates, security patches, and 2 hours of
                   content changes to keep your website secure and up-to-date.
                 </p>
