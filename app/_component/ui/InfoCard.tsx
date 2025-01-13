@@ -46,7 +46,7 @@ const InfoCard: React.FC<InfoCardType> = ({
       </span>
 
       <Image
-        className={`absolute h-[200px] w-[300px] bottom-0 -right-20`}
+        className={`absolute h-[200px] w-[300px] bottom-0 -right-20 sm:h-[150px] sm:w-[250px] sm:-right-10 lg:h-[200px] lg:w-[300px]`}
         src={img}
         height="264"
         width="284"
