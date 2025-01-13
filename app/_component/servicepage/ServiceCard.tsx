@@ -20,7 +20,7 @@ const ServiceCard = ({ service, index }: { service: any; index: number }) => {
         </ul>
         <Link
           href={`/service/${service.id}`}
-          className="inline-block mt-6 px-8 py-3 border border-white rounded-full hover:bg-white hover:text-black transition-all duration-300 w-fit"
+          className="inline-block mt-6 px-8 py-3 border border-white rounded-full  transition duration-10 ease-in-out text-center mx-auto hover:text-[#7A58FF] hover:border-[#7A58FF] w-fit"
         >
           Learn More
         </Link>
