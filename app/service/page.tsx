@@ -20,7 +20,7 @@ export default function ServicePage() {
         <div className="flex flex-col justify-between h-full">
           <div className="flex flex-col md:flex-row md:items-center justify-center min-h-[calc(100vh-3rem-155px)] max-w-screen-2xl mx-auto px-4">
             <div className="flex flex-col gap-4 text-center max-w-2xl">
-              <h3 className="text-xl font-bold text-left relative z-10 text-[#D9D9D9]">
+              <h3 className="text-2xl font-bold text-left relative z-10 text-[#D9D9D9]">
                 Services
               </h3>
               <HeadingTitle as="h1" className="text-left relative">
@@ -39,7 +39,7 @@ export default function ServicePage() {
           </div>
         </div>
       </section>
-      <section className="gradient-borders mt-4 mx-auto max-w-screen-2xl px-4">
+      <section className="flex flex-col items-center mt-4 gradient-borders">
         <div className="flex flex-col gap-4 md:gap-20">
           {servicesData.map((service) => (
             <ServiceCard
