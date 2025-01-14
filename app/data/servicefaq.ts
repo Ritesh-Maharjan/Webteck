@@ -100,51 +100,51 @@ export const serviceFaq = [
 	{
 		question: "What is web maintenance?",
 		answer: "Web maintenance involves regular updates, monitoring, and management of a website to ensure its optimal performance, security, and relevance. This includes tasks like content updates, performance optimization, security checks, and backups.",
-		category: "web maintenance"
+		category: "website-maintenance"
 	},
 	{
 		question: "How often should I have my website maintained?",
 		answer: "It's recommended to perform regular maintenance at least once a month. However, the frequency may vary depending on the complexity of your website and how often you update your content.",
-		category: "web maintenance"
+		category: "website-maintenance"
 	},
 	{
 		question: "What types of updates are included in web maintenance?",
 		answer: "Our web maintenance services offer three optional plans—Basic Maintenance, Standard Maintenance, and Premium Maintenance. Each plan includes: Basic Maintenance: Software updates, security patches, and essential content updates to keep your website functional and secure. Standard Maintenance: All features of the Basic plan, plus performance monitoring and more frequent content updates to enhance user engagement. Premium Maintenance: Comprehensive support, including all features from the Standard plan, along with regular backups and advanced security measures to ensure your website operates at its best. Choose the plan that best fits your needs to keep your website secure and functional.",
-		category: "web maintenance"
+		category: "website-maintenance"
 	},
 	{
 		question: "Will you help with content updates?",
 		answer: "Yes, we offer content management services to assist with updating text, images, and adding new pages or blog posts to keep your website fresh and engaging.",
-		category: "web maintenance"
+		category: "website-maintenance"
 	},
 	{
 		question: "How do you ensure my website's security?",
 		answer: "We implement robust security measures, including regular security audits, monitoring for vulnerabilities, and applying necessary patches. We also perform routine backups to safeguard your data.",
-		category: "web maintenance"
+		category: "website-maintenance"
 	},
 	{
 		question: "What happens if my website goes down?",
 		answer: "In the event of downtime, we respond quickly to identify the issue and restore your website as soon as possible. Our backup solutions ensure that your data can be recovered with minimal disruption.",
-		category: "web maintenance"
+		category: "website-maintenance"
 	},
 	{
 		question: "Can you assist with SEO during maintenance?",
 		answer: "Yes, we can help optimize your website for search engines during our maintenance services. This includes updating content, improving site speed, and ensuring best practices for SEO are followed.",
-		category: "web maintenance"
+		category: "website-maintenance"
 	},
 	{
 		question: "How much does web maintenance cost?",
 		answer: "The cost of web maintenance varies depending on the services required and the complexity of your website. We offer customized packages to fit your specific needs, and we can provide a detailed quote after discussing your requirements.",
-		category: "web maintenance"
+		category: "website-maintenance"
 	},
 	{
 		question: "Do I need to provide access to my website for maintenance?",
 		answer: "Yes, to perform maintenance tasks, we will need access to your website’s backend, hosting, and any relevant accounts. We prioritize security and confidentiality in handling your information.",
-		category: "web maintenance"
+		category: "website-maintenance"
 	},
 	{
 		question: "Can I handle maintenance tasks myself?",
 		answer: "While some basic maintenance tasks can be managed in-house, we recommend professional maintenance for comprehensive support. Our expertise ensures that all aspects of your website are properly managed and optimized.",
-		category: "web maintenance"
+		category: "website-maintenance"
 	}
 ]
