@@ -79,7 +79,7 @@ const WhyUs = () => {
               }`}
               onClick={() => setActiveState("covered")}
             >
-              We've Got You Covered
+              We&apos;ve Got You Covered
             </Button>
             <Button
               className={`text-3xl flex justify-between w-full md:w-4/5 text-left pb-4 border-b border-[#888888]  ${
@@ -137,7 +137,7 @@ const WhyUs = () => {
                     Upfront Pricing with Customized Solutions
                   </h3>
                   <p className="text-[#888888] md:text-xl">
-                    We don't believe in one-size-fits-all solutions.
+                    We don&apos;t believe in one-size-fits-all solutions.
                   </p>
                 </div>
                 <div className="flex flex-col gap-4">

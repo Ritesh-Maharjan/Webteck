@@ -5,6 +5,38 @@ import TextSlider, { defaultTexts } from "../../_component/ui/TextSlider";
 import Investment from "../../_component/Investment";
 import HeadingTitle from "../../_component/ui/HeadingTitle";
 
+// Define and export the Service interface
+export interface Service {
+  id: string;
+  title: string;
+  fullDescription: string;
+  features: string[];
+	image: string;
+  bgImage?: string;
+  heading?: string;
+  subheading?: string;
+  solutionImage1?: string;
+  solutionImage1Title?: string;
+  solutionImage1Desc?: string;
+  bulletPoints1?: string[];
+  solutionImage2?: string;
+  solutionImage2Title?: string;
+  solutionImage2Desc?: string;
+  bulletPoints2?: string[];
+  solutionImage3?: string;
+  solutionImage3Title?: string;
+  solutionImage3Desc?: string;
+  bulletPoints3?: string[];
+  workflowArr?: Workflow[];
+}
+interface Workflow {
+  title: string;
+  subtitle: string;
+  procedures: string[];
+  ranking: string;
+  img: string;
+}
+
 export default function ServicePage() {
   return (
     //THIS IS THE SERVICE PAGE MAIN

@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import HeadingTitle from "./ui/HeadingTitle";
 import Image from "next/image";
 import Card from "./ui/Card";
