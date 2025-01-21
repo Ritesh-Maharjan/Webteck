@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { servicesData } from '../data';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { serviceFaq } from '../../../data/servicefaq';
 import Accordion from '../../../_component/ui/Accordion';
 import HeadingTitle from '@/_component/ui/HeadingTitle';
@@ -71,7 +71,7 @@ export default function ServicePage({ params }: { params: { serviceId: string } 
 			<div
 				className={`relative bg-cover bg-center text-white`}
 				style={{
-					backgroundImage: `url('${service?.bgImage || '/default-image.png'}')`,
+					backgroundImage: `url('${service?.bgImage || 'Image not found'}')`,
 				}}
 			>
 				<header className='text-center pb-20 pt-60'>

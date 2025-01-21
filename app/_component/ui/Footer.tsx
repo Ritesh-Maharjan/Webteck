@@ -51,7 +51,7 @@ const Footer = () => {
         <div className="flex flex-col gap-8">
           <a href="" className="flex items-center gap-4">
             <h2 className="font-bold text-2xl md:text-4xl lg:text-6xl">
-              Let's Work Together
+              Let&apos;s Work Together
             </h2>
             <Image
               alt="Plus icon"

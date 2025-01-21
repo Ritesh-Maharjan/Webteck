@@ -73,7 +73,7 @@ const Workflow = () => {
         </div>
 
         <div className="flex items-center justify-center flex-wrap gap-10">
-          {workflowArr.map((el, index) => (
+          {workflowArr.map((el) => (
             <InfoCard
               key={el.ranking}
               title={el.title}

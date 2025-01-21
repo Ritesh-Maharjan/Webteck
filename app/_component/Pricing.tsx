@@ -131,7 +131,7 @@ const Pricing = () => {
           </HeadingTitle>
           <p className="text-[#818181] max-w-prose text-center md:text-2xl">
             At WebTeck, we offer flexible and transparent pricing plans to suit
-            your unique website needs. Whether you're a startup or an
+            your unique website needs. Whether you&apos;re a startup or an
             established business, our team ensures you get the best value for
             your investment.
           </p>

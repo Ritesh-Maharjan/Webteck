@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Service } from "@/(pages)/service/page";
 
 //used for display the service card in the service page main page
-const ServiceCard = ({ service, index }: { service: any; index: number }) => {
+const ServiceCard = ({ service, index }: { service: Service; index: number }) => {
   return (
     <div
       className={`flex-col mx-auto flex justify-center gap-4 md:gap-10 md:items-center ${
