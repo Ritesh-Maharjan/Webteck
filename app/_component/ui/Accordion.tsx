@@ -23,7 +23,7 @@ const Accordion: React.FC<accordionTypes> = ({
         aria-controls={`accordion-content-${id}`}
         className="flex justify-between items-center gap-2 w-full p-3"
         onClick={() => {
-          isActive ? setActiveAccordion(null) : setActiveAccordion(id);
+          return isActive ? setActiveAccordion(null) : setActiveAccordion(id);
         }}
       >
         <h4 className="text-xl text-left">{title}</h4>

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,10 +41,12 @@ const Header = () => {
         <div>
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer">
-              <img
+              <Image
                 src="/img/home-page/WebTeck-Transparent-logo.png"
                 alt="logo"
-                className="h-10"
+                className="h-10 w-full"
+                height={10}
+                width={10}
               />
               <div className="hidden sm:block">
                 <p className="font-medium">Vancouver</p>
@@ -105,14 +108,16 @@ const Header = () => {
           >
             Start a Project
           </button>
-          <img
+          <Image
             src={
               isScrolled
                 ? "/img/home-page/dark-hamburger-menu.png" // Black menu icon
                 : "/img/home-page/hamburger-menu.png" // White menu icon
             }
             alt="menu"
-            className="h-9"
+            className="h-9 w-fit"
+            height={9}
+            width={15}
           />
         </div>
       </div>
@@ -136,14 +141,14 @@ const Header = () => {
           </ul>
           <div className="flex justify-center items-center gap-12 pt-10 pb-8 px-4">
             <div className="flex gap-2 items-center">
-              <img src="/img/home-page/webteck-transparent-main-logo.png" className="h-7 w-7" alt="" />
+              <Image src="/img/home-page/webteck-transparent-main-logo.png" className="h-7 w-7" alt="Transparent Logo" height={7} width={7} />
               <p className="text-[#999999] text-md font-regular">Vancouver WebTeck</p>
             </div>
 
             <div className="flex gap-2">
-              <img src="/img/home-page/footer-fb.png" className="h-5 w-5" alt="facebook logo" />
-              <img src="/img/home-page/footer-instagram.png" className="h-5 w-5" alt="instragram logo" />
-              <img src="/img/home-page/footer-linkedin.png"className="h-5 w-5" alt="linkedin logo" />
+              <Image src="/img/home-page/footer-fb.png" className="h-5 w-5" alt="facebook logo" height={5} width={5} />
+              <Image src="/img/home-page/footer-instagram.png" className="h-5 w-5" alt="instragram logo" height={5} width={5} />
+              <Image src="/img/home-page/footer-linkedin.png"className="h-5 w-5" alt="linkedin logo" height={5} width={5} /> 
             </div>
           </div>
          

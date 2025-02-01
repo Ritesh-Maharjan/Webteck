@@ -78,10 +78,12 @@ const Offer = () => {
             style={{ left: `${scrollPosition}px` }}
           >
             <Card cardBackground="radial-gradient(circle, #FFB5B5 15%, #EEEEEE 70%)">
-              <img
+              <Image
                 src="/img/home-page/whatweoffer-1.png"
                 className="w-14"
                 alt="Website Development"
+                width={56}
+                height={30}
               />
               <div>
                 <span className="text-sm font-bold">01.</span>
@@ -90,10 +92,12 @@ const Offer = () => {
             </Card>
 
             <Card cardBackground="radial-gradient(circle, #B5E4FF 15%, #EEEEEE 70%)">
-              <img
+              <Image
                 src="/img/home-page/whatweoffer-2.png"
                 className="w-16"
                 alt="SEO Service"
+                width={56}
+                height={30}
               />
               <div>
                 <span className="text-sm font-bold">02.</span>
@@ -102,10 +106,12 @@ const Offer = () => {
             </Card>
 
             <Card cardBackground="radial-gradient(circle, #FFE1B5 15%, #EEEEEE 70%)">
-              <img
+              <Image
                 src="/img/home-page/whatweoffer-3.png"
                 className="w-10"
                 alt="Website Development"
+                width={56}
+                height={30}
               />
               <div>
                 <span className="text-sm font-bold">03.</span>
@@ -114,10 +120,12 @@ const Offer = () => {
             </Card>
 
             <Card cardBackground="radial-gradient(circle, #BFB5FF 15%, #EEEEEE 70%)">
-              <img
+              <Image
                 src="/img/home-page/whatweoffer-4.png"
                 className="w-12"
                 alt="Website Maintenance & Support"
+                width={56}
+                height={30}
               />
               <div>
                 <span className="text-sm font-bold">04.</span>
@@ -128,10 +136,12 @@ const Offer = () => {
             </Card>
 
             <Card cardBackground="radial-gradient(circle, #FFB5E1 15%, #EEEEEE 70%)">
-              <img
+              <Image
                 src="/img/home-page/whatweoffer-5.png"
                 className="w-12"
                 alt="UI/UX Design"
+                width={56}
+                height={30}
               />
               <div>
                 <span className="text-sm font-bold">05.</span>
@@ -140,10 +150,12 @@ const Offer = () => {
             </Card>
 
             <Card cardBackground="radial-gradient(circle, #FFB5E1 15%, #EEEEEE 70%)">
-              <img
+              <Image
                 src="/img/home-page/whatweoffer-6.png"
                 className="w-12"
                 alt="E-Commerce"
+                width={56}
+                height={30}
               />
               <div>
                 <span className="text-sm font-bold">06.</span>
@@ -152,10 +164,12 @@ const Offer = () => {
             </Card>
 
             <Card cardBackground="radial-gradient(circle, #FFB5E1 15%, #EEEEEE 70%)">
-              <img
+              <Image
                 src="/img/home-page/whatweoffer-7.png"
                 className="w-12"
                 alt="Website Design"
+                width={56}
+                height={30}
               />
               <div>
                 <span className="text-sm font-bold">07.</span>
@@ -164,10 +178,12 @@ const Offer = () => {
             </Card>
 
             <Card cardBackground="radial-gradient(circle, #FFB5E1 15%, #EEEEEE 70%)">
-              <img
+              <Image
                 src="/img/home-page/whatweoffer-8.png"
                 className="w-12"
                 alt="Branding and Graphic Design"
+                width={56}
+                height={30}
               />
               <div>
                 <span className="text-sm font-bold">08.</span>
@@ -178,10 +194,12 @@ const Offer = () => {
             </Card>
 
             <Card cardBackground="radial-gradient(circle, #FFB5E1 15%, #EEEEEE 70%)">
-              <img
+              <Image
                 src="/img/home-page/whatweoffer-9.png"
                 className="w-12"
                 alt="Digital Marketing"
+                width={56}
+                height={30}
               />
               <div>
                 <span className="text-sm font-bold">09.</span>
@@ -190,10 +208,12 @@ const Offer = () => {
             </Card>
 
             <Card cardBackground="radial-gradient(circle, #FFB5E1 15%, #EEEEEE 70%)">
-              <img
+              <Image
                 src="/img/home-page/whatweoffer-10.png"
                 className="w-12"
                 alt="Content Strategy"
+                width={56}
+                height={30}
               />
               <div>
                 <span className="text-sm font-bold">10.</span>
@@ -202,10 +222,12 @@ const Offer = () => {
             </Card>
 
             <Card cardBackground="radial-gradient(circle, #FFB5E1 15%, #EEEEEE 70%)">
-              <img
+              <Image
                 src="/img/home-page/whatweoffer-11.png"
                 className="w-12"
                 alt="Data & Analytics"
+                width={56}
+                height={30}
               />
               <div>
                 <span className="text-sm font-bold">11.</span>
@@ -214,10 +236,12 @@ const Offer = () => {
             </Card>
 
             <Card cardBackground="radial-gradient(circle, #FFB5E1 15%, #EEEEEE 70%)">
-              <img
+              <Image
                 src="/img/home-page/whatweoffer-12.png"
                 className="w-12"
                 alt="Accessibility Compliance"
+                width={56}
+                height={30}
               />
               <div>
                 <span className="text-sm font-bold">12.</span>
