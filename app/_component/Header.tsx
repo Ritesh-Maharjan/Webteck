@@ -26,15 +26,11 @@ const Header = () => {
 
   return (
     <header
-      className={`z-10 h-auto flex items-center absolute top-0 w-full transition-all duration-200 ${
+      className={`z-10 h-auto flex items-center sticky top-0 w-full transition-all duration-200 ${
         isScrolled
           ? "bg-white backdrop-blur-md shadow-md text-black"
           : "bg-transparent text-white"
       }`}
-      style={{
-        position: isScrolled ? "sticky" : "absolute",
-        top: 0,
-      }}
     >
       <div className="max-w-screen-2xl w-full mx-auto flex justify-between items-center p-4">
         {/* Logo Section */}
@@ -48,9 +44,12 @@ const Header = () => {
                 height={10}
                 width={10}
               />
-              <div className="hidden sm:block">
-                <p className="font-medium">Vancouver</p>
-                <p className="font-medium">WebTeck</p>
+              <div
+                className={`hidden sm:block ${isScrolled ? "hidden" : "block"}`}
+                style={{ visibility: isScrolled ? "hidden" : "visible" }}
+              >
+                <p className="font-bold">Vancouver</p>
+                <p className="font-bold">WebTeck</p>
               </div>
             </div>
           </Link>
@@ -95,10 +94,7 @@ const Header = () => {
         </button>
 
         {/* Mobile Menu Toggle */}
-        <div
-          className="md:hidden cursor-pointer flex items-center gap-3 sm:gap-2"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
+        <div className="md:hidden flex items-center gap-3 sm:gap-2">
           <button
             className={`rounded-3xl border py-2 px-4 font-medium text-sm transition duration-10 ease-in-out ${
               isScrolled
@@ -106,20 +102,69 @@ const Header = () => {
                 : "border-[#CDCDCD] text-white hover:text-[#7A58FF] hover:border-[#7A58FF]"
             }`}
           >
-            Start a Project
+            <Link href="/contact">Start a Project</Link>
           </button>
-          <Image
-            src={
-              isScrolled
-                ? "/img/home-page/dark-hamburger-menu.png" // Black menu icon
-                : "/img/home-page/hamburger-menu.png" // White menu icon
-            }
-            alt="menu"
-            className="h-9 w-fit"
-            height={9}
-            width={15}
-          />
+          <button
+            onClick={() => setIsMenuOpen((prev) => !prev)}
+            aria-expanded={isMenuOpen}
+            aria-label="Toggle navigation menu"
+            className="relative group"
+          >
+            <div
+              className={`relative flex overflow-hidden items-center justify-center rounded-full w-[35px] h-[35px] transform transition-all ${
+                isScrolled ? "bg-white" : "bg-black"
+              } ring-1 ${
+                isScrolled ? "ring-black" : "ring-white"
+              } hover:ring-2 group-focus:ring-2 ring-opacity-70 duration-200 shadow-md`}
+            >
+              <div className="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+                <div
+                  className={`${
+                    isScrolled ? "bg-black" : "bg-white"
+                  } h-[2px] w-7 transform transition-all duration-300 origin-left ${
+                    isMenuOpen ? "translate-x-10" : ""
+                  }`}
+                ></div>
+                <div
+                  className={`${
+                    isScrolled ? "bg-black" : "bg-white"
+                  } h-[2px] w-7 rounded transform transition-all duration-300 ${
+                    isMenuOpen ? "translate-x-10 delay-75" : ""
+                  }`}
+                ></div>
+                <div
+                  className={`${
+                    isScrolled ? "bg-black" : "bg-white"
+                  } h-[2px] w-7 transform transition-all duration-300 origin-left ${
+                    isMenuOpen ? "translate-x-10 delay-150" : ""
+                  }`}
+                ></div>
+
+                <div
+                  className={`absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 ${
+                    isMenuOpen ? "translate-x-0 flex w-12" : "w-0"
+                  }`}
+                >
+                  <div
+                    className={`absolute ${
+                      isScrolled ? "bg-black" : "bg-white"
+                    } h-[2px] w-5 transform transition-all duration-500 ${
+                      isMenuOpen ? "rotate-45 delay-300" : "rotate-0"
+                    }`}
+                  ></div>
+                  <div
+                    className={`absolute ${
+                      isScrolled ? "bg-black" : "bg-white"
+                    } h-[2px] w-5 transform transition-all duration-500 ${
+                      isMenuOpen ? "-rotate-45 delay-300" : "-rotate-0"
+                    }`}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </button>
         </div>
+
       </div>
 
       {/* Mobile Navigation */}
@@ -141,7 +186,7 @@ const Header = () => {
           </ul>
           <div className="flex justify-center items-center gap-12 pt-10 pb-8 px-4">
             <div className="flex gap-2 items-center">
-              <Image src="/img/home-page/webteck-transparent-main-logo.png" className="h-7 w-7" alt="Transparent Logo" height={7} width={7} />
+              <img src="/img/home-page/webteck-transparent-main-logo.png" className="h-7 w-7" alt="vancouver webteck logo" />
               <p className="text-[#999999] text-md font-regular">Vancouver WebTeck</p>
             </div>
 

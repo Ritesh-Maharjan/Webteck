@@ -71,7 +71,8 @@ export default function ServicePage() {
           </div>
         </div>
       </section>
-      <section className="gradient-borders mt-4 mx-auto max-w-screen-2xl px-4">
+      <section className="flex flex-col items-center mt-4 before:h-2 before:w-full before:inline-block before:bg-gradient-to-r before:from-[#D9D9D9] before:to-[#888888] mb-20 
+		before:mb-24 after:mt-24;">
         <div className="flex flex-col gap-4 md:gap-20">
           {servicesData.map((service) => (
             <ServiceCard

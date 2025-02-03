@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     // Send the email
     await transporter.sendMail({
       from: '"WebTeck" <vancouver.webteck@gmail.com>', // Replace with your details
-      to: "riteshmaharjan07@gmail.com", // Replace with your email
+      to: "vancouver.webteck@gmail.com", // Replace with your email
       subject: "New Form Submission",
       html: `
         <h1>Form Submission</h1>
