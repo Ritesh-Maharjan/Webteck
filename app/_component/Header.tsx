@@ -39,7 +39,7 @@ const Header = () => {
             <div className="flex items-center gap-2 cursor-pointer">
               <Image
                 src="/img/home-page/WebTeck-Transparent-logo.png"
-                alt="logo"
+                alt="Vancouver WebTeck logo"
                 className="h-10 w-full"
                 height={10}
                 width={10}
@@ -48,8 +48,8 @@ const Header = () => {
                 className={`hidden sm:block ${isScrolled ? "hidden" : "block"}`}
                 style={{ visibility: isScrolled ? "hidden" : "visible" }}
               >
-                <p className="font-bold">Vancouver</p>
-                <p className="font-bold">WebTeck</p>
+                <p className="font-normal">Vancouver</p>
+                <p className="font-normal">WebTeck</p>
               </div>
             </div>
           </Link>
