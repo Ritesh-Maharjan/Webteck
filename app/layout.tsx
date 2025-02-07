@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <meta name="description" content="Vancouver WebTeck specializes in custom web development, e-commerce solutions, and responsive design, UI/UX design, delivering high-performance, SEO-optimized websites to boost your online presence." />
-        <meta name="keywords" content="web development, e-commerce, SEO optimization, Vancouver web design, custom websites, responsive design, website development Vancouver" />
+        <meta name="keywords" content="Vancouver web development, Vancouver web design, e-commerce, SEO optimization, custom websites, responsive design, website development Vancouver, Canadian web developers" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Vancouver WebTeck" />
         <meta property="og:title" content="Vancouver WebTeck - Web Development Experts" />
