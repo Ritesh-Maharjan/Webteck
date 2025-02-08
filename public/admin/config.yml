@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: Ritesh-Maharjan/Webteck
+  branch: main
+  auth_type: oauth
+  proxy_url: "/api/auth/login"
+
+media_folder: "public/uploads" # Where images will be stored
+public_folder: "/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}" # Use the title to generate the filename
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "body", label: "Body", widget: "markdown" }

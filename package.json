@@ -13,6 +13,7 @@
     "@hookform/resolvers": "^3.9.1",
     "@payloadcms/richtext-lexical": "^3.14.0",
     "@types/uuid": "^10.0.0",
+    "decap-cms": "^3.6.1",
     "escape-html": "^1.0.3",
     "next": "^15.0.4",
     "nodemailer": "^6.9.16",
