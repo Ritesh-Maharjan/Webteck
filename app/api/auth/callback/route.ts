@@ -36,10 +36,10 @@ export async function GET(req: NextRequest) {
   const response =
     process.env.NODE_ENV === "production"
       ? NextResponse.redirect(
-          `http://localhost:3000/admin/index.html#access_token=${tokenData.access_token}&token_type=bearer`
+          `https://webteck.ca/admin/#access_token=${tokenData.access_token}&token_type=bearer`
         )
       : NextResponse.redirect(
-          `https://webteck.ca/admin/#access_token=${tokenData.access_token}&token_type=bearer`
+          `http://localhost:3000/admin/index.html#access_token=${tokenData.access_token}&token_type=bearer`
         );
 
   console.log("MIC testing");
