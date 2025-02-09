@@ -4,6 +4,7 @@ export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const code = searchParams.get("code");
 
+  console.log("I am ehre");
   if (!code) {
     return NextResponse.json({ error: "No code provided" }, { status: 400 });
   }
@@ -33,6 +34,23 @@ export async function GET(req: NextRequest) {
     );
   }
 
-  const redirectUrl = `https://webteck.ca/admin/index.html#access_token=${tokenData.access_token}`;
-  return NextResponse.redirect(redirectUrl);
+  // Create response with cookie and redirect
+  const response = NextResponse.redirect(
+    `http://localhost:3000/admin/index.html#access_token=${tokenData.access_token}&token_type=bearer`
+  );
+  // const response = NextResponse.redirect(
+  //   `https://webteck.ca/admin/#access_token=${tokenData.access_token}&token_type=bearer`
+  // );
+
+  // Set the required cookie for Decap CMS
+  response.cookies.set({
+    name: "nf_jwt",
+    value: tokenData.access_token,
+    path: "/",
+    httpOnly: true,
+    secure: true,
+    sameSite: "lax",
+  });
+
+  return response;
 }
