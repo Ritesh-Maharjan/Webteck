@@ -36,13 +36,11 @@ export async function GET(req: NextRequest) {
   const response =
     process.env.NODE_ENV === "production"
       ? NextResponse.redirect(
-          `https://webteck.ca/admin/#access_token=${tokenData.access_token}&token_type=bearer`
+          `https://webteck.ca/admin/index.html#access_token=${tokenData.access_token}&token_type=bearer`
         )
       : NextResponse.redirect(
           `http://localhost:3000/admin/#access_token=${tokenData.access_token}&token_type=bearer`
         );
-
-  console.log("MIC testing");
 
   // Set the required cookie for Decap CMS
   response.cookies.set({
