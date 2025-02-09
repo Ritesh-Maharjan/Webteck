@@ -4,8 +4,9 @@ backend:
   branch: main
   auth_type: oauth
   proxy_url: "/api/auth/login"
+  site_url: "https://webteck.ca"
 
-media_folder: "public/uploads" # Where images will be stored
+media_folder: "/public/uploads" # Where images will be stored
 public_folder: "/uploads"
 
 collections:
@@ -17,4 +18,5 @@ collections:
     fields:
       - { name: "title", label: "Title", widget: "string" }
       - { name: "date", label: "Date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image", required: false }
       - { name: "body", label: "Body", widget: "markdown" }
