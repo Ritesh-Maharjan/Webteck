@@ -48,9 +48,9 @@ export async function GET(req: NextRequest) {
     value: tokenData.access_token,
     path: "/",
     domain: "webteck.ca", // Explicit domain
-    httpOnly: true,
+    httpOnly: false,
     secure: true,
-    sameSite: "lax",
+    sameSite: "none",
   });
 
   return response;
