@@ -33,8 +33,6 @@ export async function GET(req: NextRequest) {
     );
   }
 
-  // Redirect back to Decap CMS admin with the token in the URL hash
-  return NextResponse.redirect(
-    new URL(`/admin/index.html#access_token=${tokenData.access_token}`, req.url)
-  );
+  const redirectUrl = `https://webteck.ca/admin/index.html#access_token=${tokenData.access_token}`;
+  return NextResponse.redirect(redirectUrl);
 }
