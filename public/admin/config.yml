@@ -3,10 +3,9 @@ backend:
   repo: Ritesh-Maharjan/Webteck
   branch: main
   auth_type: oauth
-  proxy_url: "https://webteck.ca/api/auth/login" # Full absolute URL
   base_url: "https://webteck.ca"
-  auth_endpoint: "https://webteck.ca/api/auth/login" # Add this
-  identity: false # Disable Netlify Identity
+  proxy_url: "/api/auth/login" # Full absolute URL
+  site_url: "https://webteck.ca"
 
 media_folder: "/public/uploads" # Where images will be stored
 public_folder: "/uploads"
