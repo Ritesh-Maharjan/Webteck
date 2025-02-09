@@ -33,13 +33,14 @@ export async function GET(req: NextRequest) {
     );
   }
 
-  // Create response with cookie and redirect
-  const response = NextResponse.redirect(
-    `http://localhost:3000/admin/index.html#access_token=${tokenData.access_token}&token_type=bearer`
-  );
-  // const response = NextResponse.redirect(
-  //   `https://webteck.ca/admin/#access_token=${tokenData.access_token}&token_type=bearer`
-  // );
+  const response =
+    process.env.NODE_ENV === "production"
+      ? NextResponse.redirect(
+          `http://localhost:3000/admin/index.html#access_token=${tokenData.access_token}&token_type=bearer`
+        )
+      : NextResponse.redirect(
+          `https://webteck.ca/admin/#access_token=${tokenData.access_token}&token_type=bearer`
+        );
 
   console.log("MIC testing");
 
