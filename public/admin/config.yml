@@ -6,6 +6,7 @@ backend:
   base_url: "https://webteck.ca"
   proxy_url: "/api/auth/login" # Full absolute URL
   site_url: "https://webteck.ca"
+  auth_endpoint: "api/auth/login
 
 media_folder: "/public/uploads" # Where images will be stored
 public_folder: "/uploads"
