@@ -2,10 +2,13 @@
 <html>
   <head> </head>
   <body>
-    <div id="cms-root"></div>
+    <!-- Replace "cms-root" with "nc-root" -->
+    <div id="nc-root"></div>
 
-    <!-- Initialize Decap CMS AFTER the script above -->
-    <script src="https://unpkg.com/decap-cms@3.6.1/dist/decap-cms.js"></script>
+    <script>
+      window.CMS_MANUAL_INIT = true;
+    </script>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         window.CMS.init();
