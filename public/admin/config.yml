@@ -3,8 +3,9 @@ backend:
   repo: Ritesh-Maharjan/Webteck
   branch: main
   auth_type: oauth
+  base_url: "https://webteck.ca"
   proxy_url: "/api/auth/login"
-  base_url : "https://webteck.ca"
+  auth_endpoint: "api/auth/login" # Forces GitHub authentication
 
 media_folder: "/public/uploads" # Where images will be stored
 public_folder: "/uploads"
