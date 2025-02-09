@@ -39,7 +39,7 @@ export async function GET(req: NextRequest) {
           `https://webteck.ca/admin/#access_token=${tokenData.access_token}&token_type=bearer`
         )
       : NextResponse.redirect(
-          `http://localhost:3000/admin/index.html#access_token=${tokenData.access_token}&token_type=bearer`
+          `http://localhost:3000/admin/#access_token=${tokenData.access_token}&token_type=bearer`
         );
 
   console.log("MIC testing");
@@ -49,6 +49,7 @@ export async function GET(req: NextRequest) {
     name: "nf_jwt",
     value: tokenData.access_token,
     path: "/",
+    domain: "webteck.ca", // Explicit domain
     httpOnly: true,
     secure: true,
     sameSite: "lax",
