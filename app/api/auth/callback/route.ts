@@ -4,7 +4,6 @@ export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const code = searchParams.get("code");
 
-  console.log("I am ehre");
   if (!code) {
     return NextResponse.json({ error: "No code provided" }, { status: 400 });
   }
@@ -41,6 +40,8 @@ export async function GET(req: NextRequest) {
   // const response = NextResponse.redirect(
   //   `https://webteck.ca/admin/#access_token=${tokenData.access_token}&token_type=bearer`
   // );
+
+  console.log("MIC testing");
 
   // Set the required cookie for Decap CMS
   response.cookies.set({

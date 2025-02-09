@@ -3,11 +3,11 @@ backend:
   repo: Ritesh-Maharjan/Webteck
   branch: main
   auth_type: oauth
-  # proxy_url: "http://localhost:3000/api/auth/login"
-  # site_url: "http://localhost:3000"
+  proxy_url: "http://localhost:3000/api/auth/login"
+  site_url: "http://localhost:3000"
+  base_url: "http://localhost:3000/api/"
   # site_url: "https://webteck.ca"
   # base_url: "https://webteck.ca"
-  # base_url: "http://localhost:3000"
   # auth_endpoint: "api/auth/login"
 
 media_folder: "/public/uploads" # Where images will be stored
