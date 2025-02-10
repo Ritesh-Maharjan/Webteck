@@ -32,6 +32,7 @@ export default function RootLayout({
         <meta property="og:description" content="Vancouver WebTeck specializes in custom web development, e-commerce solutions, and responsive design, delivering high-performance, SEO-optimized websites to boost your online presence." />
         <meta property="og:image" content="/og-image.png" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="google-site-verification" content="86UZbzNVw_i3SKQ3gHjxq2ZXYYdwVde83bbNJDB6cxc" />
 
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
