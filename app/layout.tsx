@@ -4,6 +4,8 @@ import { HeaderWrapper } from "@/_component/ui/HeaderWrapper";
 import { Nunito_Sans } from "next/font/google";
 import Footer from "./_component/ui/Footer";
 import Script from "next/script"; // Import Script for analytics and structured data
+import Breadcrumbs from "@/_component/Breadcrumbs";
+
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
@@ -101,7 +103,7 @@ export default function RootLayout({
             }),
           }}
         />
-
+        <Breadcrumbs />
         <HeaderWrapper />
         {children}
         <Footer />
