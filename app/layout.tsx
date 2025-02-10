@@ -6,18 +6,26 @@ import Footer from "./_component/ui/Footer";
 import Script from "next/script"; // Import Script for analytics and structured data
 import Breadcrumbs from "@/_component/Breadcrumbs";
 
-
 const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
   variable: "--font-nunito-sans",
   weight: ["400", "700"],
 });
 
+// Use metadata for SEO
 export const metadata: Metadata = {
   title: "Vancouver WebTeck",
   description:
     "Vancouver WebTeck specializes in custom web development, UI/UX design, e-commerce solutions, and responsive design, delivering high-performance, SEO-optimized websites to boost your online presence.",
-  keywords: "web development, e-commerce, SEO optimization, Vancouver web design, custom websites, responsive design, website development Vancouver",
+  keywords: [
+    "web development",
+    "e-commerce",
+    "SEO optimization",
+    "Vancouver web design",
+    "custom websites",
+    "responsive design",
+    "website development Vancouver",
+  ],
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -27,6 +35,19 @@ export const metadata: Metadata = {
       { rel: "icon", url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
   },
+  openGraph: {
+    title: "Vancouver WebTeck - Web Development Experts",
+    description:
+      "Vancouver WebTeck specializes in custom web development, e-commerce solutions, and responsive design, delivering high-performance, SEO-optimized websites to boost your online presence.",
+    images: "/og-image.png",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
+  verification: {
+    google: "86UZbzNVw_i3SKQ3gHjxq2ZXYYdwVde83bbNJDB6cxc",
+  },
 };
 
 export default function RootLayout({
@@ -34,26 +55,6 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" dir="ltr">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="description" content="Vancouver WebTeck specializes in custom web development, e-commerce solutions, and responsive design, UI/UX design, delivering high-performance, SEO-optimized websites to boost your online presence." />
-        <meta name="keywords" content="Vancouver web development, Vancouver web design, e-commerce, SEO optimization, custom websites, responsive design, website development Vancouver, Canadian web developers" />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Vancouver WebTeck" />
-        <meta property="og:title" content="Vancouver WebTeck - Web Development Experts" />
-        <meta property="og:description" content="Vancouver WebTeck specializes in custom web development, e-commerce solutions, and responsive design, delivering high-performance, SEO-optimized websites to boost your online presence." />
-        <meta property="og:image" content="/og-image.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="google-site-verification" content="86UZbzNVw_i3SKQ3gHjxq2ZXYYdwVde83bbNJDB6cxc" />
-
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
-        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-      </head>
-
       <body className={`${nunitoSans.className} bg-black text-white antialiased`}>
         {/* Google Analytics */}
         <Script
