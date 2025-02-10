@@ -49,7 +49,7 @@ const Header = () => {
                 style={{ visibility: isScrolled ? "hidden" : "visible" }}
               >
                 <p className="font-normal">Vancouver</p>
-                <p className="font-normal">WebTeck</p>
+                <p className="font-normal">WebbTeck</p>
               </div>
             </div>
           </Link>
