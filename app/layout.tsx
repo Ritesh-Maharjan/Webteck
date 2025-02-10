@@ -33,8 +33,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-<html lang="en" dir="ltr">
-<head>
+    <html lang="en" dir="ltr">
+      <head>
         <meta charSet="UTF-8" />
         <meta name="description" content="Vancouver WebTeck specializes in custom web development, e-commerce solutions, and responsive design, UI/UX design, delivering high-performance, SEO-optimized websites to boost your online presence." />
         <meta name="keywords" content="Vancouver web development, Vancouver web design, e-commerce, SEO optimization, custom websites, responsive design, website development Vancouver, Canadian web developers" />
