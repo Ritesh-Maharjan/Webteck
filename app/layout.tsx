@@ -33,8 +33,9 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <head>
+<html lang="en" dir="ltr">
+<head>
+        <meta charSet="UTF-8" />
         <meta name="description" content="Vancouver WebTeck specializes in custom web development, e-commerce solutions, and responsive design, UI/UX design, delivering high-performance, SEO-optimized websites to boost your online presence." />
         <meta name="keywords" content="Vancouver web development, Vancouver web design, e-commerce, SEO optimization, custom websites, responsive design, website development Vancouver, Canadian web developers" />
         <meta name="robots" content="index, follow" />
@@ -83,8 +84,8 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               "name": "Vancouver WebTeck",
               "url": "https://www.webteck.ca/",
-              "logo": "https://www.webteck.ca/images/logo.png",
-              "image": "https://www.webteck.ca/images/banner.jpg",
+              "logo": "https://www.webteck.ca/favicon.ico",
+              "image": "https://www.webteck.ca/public/img/home-page/hero-bg.png",
               "description":
                 "Vancouver WebTeck specializes in custom web development, UI/UX design, e-commerce solutions, and responsive design, delivering high-performance, SEO-optimized websites to boost your online presence.",
               "priceRange": "$$",
