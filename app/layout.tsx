@@ -18,6 +18,15 @@ export const metadata: Metadata = {
   description:
     "Vancouver WebTeck specializes in custom web development, UI/UX design, e-commerce solutions, and responsive design, delivering high-performance, SEO-optimized websites to boost your online presence.",
   keywords: "web development, e-commerce, SEO optimization, Vancouver web design, custom websites, responsive design, website development Vancouver",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    other: [
+      { rel: "icon", url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { rel: "icon", url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({
