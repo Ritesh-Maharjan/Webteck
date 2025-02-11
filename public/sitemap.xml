@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://webteck.ca/</loc>
+  <lastmod>2025-02-10T15:41:52+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://webteck.ca/service</loc>
+  <lastmod>2025-02-10T15:41:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://webteck.ca/contact</loc>
+  <lastmod>2025-02-10T15:41:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://webteck.ca/service/web-development</loc>
+  <lastmod>2025-02-10T15:41:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://webteck.ca/service/web-maintenance</loc>
+  <lastmod>2025-02-10T15:41:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://webteck.ca/service/UI-UX</loc>
+  <lastmod>2025-02-10T15:41:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://webteck.ca/privacy-policy</loc>
+  <lastmod>2025-02-10T15:41:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://webteck.ca/service/ui-ux-design</loc>
+  <lastmod>2025-02-10T15:41:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://webteck.ca/service/website-maintenance</loc>
+  <lastmod>2025-02-10T15:41:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://webteck.ca/service/privacy-policy</loc>
+  <lastmod>2025-02-10T15:41:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
