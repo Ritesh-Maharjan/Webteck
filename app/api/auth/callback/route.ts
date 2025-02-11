@@ -34,7 +34,7 @@ export async function GET(req: NextRequest) {
   }
 
   const response = NextResponse.redirect(
-    `https://webteck.ca/auth-callback?access_token=${tokenData.access_token}`
+    `${process.env.NEXT_PUBLIC_BASE_URL}/auth-callback?access_token=${tokenData.access_token}`
   );
 
   return response;

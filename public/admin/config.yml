@@ -3,7 +3,7 @@ backend:
   repo: Ritesh-Maharjan/Webteck
   branch: main
   auth_type: oauth
-  base_url: "https://webteck.ca"
+  base_url: "https://webteck.ca/api/"
 
 media_folder: "public/uploads" # Where images will be stored
 public_folder: "/uploads"
