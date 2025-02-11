@@ -75,7 +75,7 @@ const Testimonial = () => {
             </div>
           </div>
           <div className="flex flex-col gap-5">
-            <img src="/img/home-page/liliare-logo.png" alt="liliare logo" className="h-8 w-24" />
+            <Image src="/img/home-page/liliare-logo.png" alt="liliare logo" className="h-8 w-24" />
             <div className="border-t flex flex-col gap-2">
               <h4 className="font-bold">Liliana</h4>
               <blockquote className="text-sm">
