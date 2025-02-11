@@ -33,25 +33,9 @@ export async function GET(req: NextRequest) {
     );
   }
 
-  const response =
-    process.env.NODE_ENV === "production"
-      ? NextResponse.redirect(
-          `https://webteck.ca/admin/index.html#access_token=${tokenData.access_token}&token_type=bearer`
-        )
-      : NextResponse.redirect(
-          `http://localhost:3000/admin/#access_token=${tokenData.access_token}&token_type=bearer`
-        );
-
-  // Set the required cookie for Decap CMS
-  response.cookies.set({
-    name: "nf_jwt",
-    value: tokenData.access_token,
-    path: "/",
-    domain: "webteck.ca", // Explicit domain
-    httpOnly: false,
-    secure: true,
-    sameSite: "none",
-  });
+  const response = NextResponse.redirect(
+    `https://webteck.ca/auth-callback?access_token=${tokenData.access_token}`
+  );
 
   return response;
 }
