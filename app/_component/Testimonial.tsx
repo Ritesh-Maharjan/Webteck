@@ -44,9 +44,15 @@ const Testimonial = () => {
             </div>
           </div>
           <div className="flex flex-col gap-5">
-            <h4>Website LOGO</h4>
+            <Image
+             src="/img/home-page/sushiwood-logo.jpg"
+             alt="sushiwood-logo"
+             width={32}
+             height={32}
+             className="rounded-md"
+            />
             <div className="border-t flex flex-col gap-2">
-              <h4>Website Name</h4>
+              <h4 className="font-bold">Sushiwood Fernie</h4>
               <blockquote className="text-sm">
                 “I am incredibly impressed with the expertise and
                 professionalism of WebTeck. They not only delivered a visually
@@ -56,7 +62,7 @@ const Testimonial = () => {
                 WebTeck for any website needs!”
               </blockquote>
 
-              <cite className="text-lg">Jackson Li</cite>
+              <cite className="text-lg">Oyuna</cite>
             </div>
           </div>
           <div className="flex flex-col gap-5">

@@ -49,8 +49,8 @@ const Footer = () => {
 
       <div className="flex flex-col md:flex-row justify-between py-12 gap-20">
         <div className="flex flex-col gap-8">
-          <a href="" className="flex items-center gap-4">
-            <h2 className="font-bold text-2xl md:text-4xl lg:text-6xl">
+          <Link href="/contact" className="flex items-center gap-4">
+            <h2 className="font-bold text-2xl md:text-4xl lg:text-6xl transition duration-10 ease-in-out hover:text-[#7A58FF]">
               Let&apos;s Work Together
             </h2>
             <Image
@@ -61,7 +61,7 @@ const Footer = () => {
               role="presentation"
               className="w-8 h-8"
             />
-          </a>
+          </Link>
           <p className="text-[#888888] max-w-prose">
             Our success in client collaboration is built on effective
             communication, mutual understanding, and a shared commitment to
