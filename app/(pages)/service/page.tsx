@@ -11,7 +11,7 @@ export interface Service {
   title: string;
   fullDescription: string;
   features: string[];
-	image: string;
+  image: string;
   bgImage?: string;
   heading?: string;
   subheading?: string;
@@ -29,6 +29,7 @@ export interface Service {
   bulletPoints3?: string[];
   workflowArr?: Workflow[];
 }
+
 interface Workflow {
   title: string;
   subtitle: string;
@@ -39,14 +40,14 @@ interface Workflow {
 
 export default function ServicePage() {
   return (
-    //THIS IS THE SERVICE PAGE MAIN
+    // THIS IS THE SERVICE PAGE MAIN
     <main className="w-full">
       <section className="hero-section relative w-full z-0">
         <Image
           src="/img/service-page/service-hero-bg.png"
           alt="Hero Image"
           fill
-          priority //might need to optimize the image for performance so i can remove this WARNING**
+          priority // might need to optimize the image for performance
           className="object-cover absolute top-0 left-0 w-full h-full z-0"
         />
         <div className="flex flex-col justify-between h-full">
@@ -59,11 +60,10 @@ export default function ServicePage() {
                 We cultivate trust alongside building websites.
               </HeadingTitle>
             </div>
-            <div className="mt-4 w-[418px]">
-								<p className="text-2xl text-[#DBDBDB] text-left relative z-10 max-w-full sm:w-[300px]">
-								Our extensive knowledge in design and technology brings forth
-								leading brands and digital journeys.
-								</p>
+            <div className="mt-4 w-full sm:w-[300px] md:w-[418px]">
+              <p className="text-2xl text-[#DBDBDB] text-left relative z-10 max-w-full">
+                Our extensive knowledge in design and technology brings forth leading brands and digital journeys.
+              </p>
             </div>
           </div>
           <div className="relative z-10">
@@ -71,8 +71,8 @@ export default function ServicePage() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center mt-4 before:h-2 before:w-full before:inline-block before:bg-gradient-to-r before:from-[#D9D9D9] before:to-[#888888] mb-20 
-		before:mb-24 after:mt-24;">
+
+      <section className="flex flex-col items-center mt-4 before:h-2 before:w-full before:inline-block before:bg-gradient-to-r before:from-[#D9D9D9] before:to-[#888888] mb-20 before:mb-24 after:mt-24">
         <div className="flex flex-col gap-4 md:gap-20">
           {servicesData.map((service) => (
             <ServiceCard
@@ -83,6 +83,7 @@ export default function ServicePage() {
           ))}
         </div>
       </section>
+
       <Investment />
     </main>
   );
