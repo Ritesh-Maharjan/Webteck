@@ -40,7 +40,7 @@ const Header = () => {
               <Image
                 src="/img/home-page/WebTeck-Transparent-logo.png"
                 alt="Vancouver WebTeck logo"
-                className="h-10 w-full"
+                className="h-10 sm:h-8 md:h-10 w-auto"
                 height={40}
                 width={100}
               />
