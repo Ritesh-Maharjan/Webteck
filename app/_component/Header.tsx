@@ -38,7 +38,7 @@ const Header = () => {
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer">
               <Image
-                src="/img/home-page/webteck-transparent-logo.png"
+                src="/WebTeck-Transparent-logo.png"
                 alt="Vancouver WebTeck logo"
                 className="h-10 w-full"
                 height={40}
