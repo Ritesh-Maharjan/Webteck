@@ -59,6 +59,8 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr">
       <head>
+        {/* Meta viewport for responsive design */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Favicon and other icons */}
         <link rel="icon" href="/public/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

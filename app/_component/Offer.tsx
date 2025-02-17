@@ -135,7 +135,7 @@ const Offer = () => {
               </div>
             </Card>
 
-            <Card cardBackground="radial-gradient(circle, #FFB5E1 15%, #EEEEEE 70%)">
+            <Card cardBackground="radial-gradient(circle, #FFB5B5 15%, #EEEEEE 70%)">
               <Image
                 src="/img/home-page/whatweoffer-5.png"
                 className="w-12"
@@ -149,7 +149,7 @@ const Offer = () => {
               </div>
             </Card>
 
-            <Card cardBackground="radial-gradient(circle, #FFB5E1 15%, #EEEEEE 70%)">
+            <Card cardBackground="radial-gradient(circle, #B5E4FF 15%, #EEEEEE 70%)">
               <Image
                 src="/img/home-page/whatweoffer-6.png"
                 className="w-12"
@@ -163,7 +163,7 @@ const Offer = () => {
               </div>
             </Card>
 
-            <Card cardBackground="radial-gradient(circle, #FFB5E1 15%, #EEEEEE 70%)">
+            <Card cardBackground="radial-gradient(circle, #FFE1B5 15%, #EEEEEE 70%)">
               <Image
                 src="/img/home-page/whatweoffer-7.png"
                 className="w-12"
@@ -177,7 +177,7 @@ const Offer = () => {
               </div>
             </Card>
 
-            <Card cardBackground="radial-gradient(circle, #FFB5E1 15%, #EEEEEE 70%)">
+            <Card cardBackground="radial-gradient(circle, #BFB5FF 15%, #EEEEEE 70%)">
               <Image
                 src="/img/home-page/whatweoffer-8.png"
                 className="w-12"
@@ -207,7 +207,7 @@ const Offer = () => {
               </div>
             </Card>
 
-            <Card cardBackground="radial-gradient(circle, #FFB5E1 15%, #EEEEEE 70%)">
+            <Card cardBackground="radial-gradient(circle, #FFB5B5 15%, #EEEEEE 70%)">
               <Image
                 src="/img/home-page/whatweoffer-10.png"
                 className="w-12"
@@ -221,7 +221,7 @@ const Offer = () => {
               </div>
             </Card>
 
-            <Card cardBackground="radial-gradient(circle, #FFB5E1 15%, #EEEEEE 70%)">
+            <Card cardBackground="radial-gradient(circle, #B5E4FF 15%, #EEEEEE 70%)">
               <Image
                 src="/img/home-page/whatweoffer-11.png"
                 className="w-12"
@@ -235,7 +235,7 @@ const Offer = () => {
               </div>
             </Card>
 
-            <Card cardBackground="radial-gradient(circle, #FFB5E1 15%, #EEEEEE 70%)">
+            <Card cardBackground="radial-gradient(circle, #FFE1B5 15%, #EEEEEE 70%)">
               <Image
                 src="/img/home-page/whatweoffer-12.png"
                 className="w-12"

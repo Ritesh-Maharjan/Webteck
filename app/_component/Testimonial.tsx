@@ -47,7 +47,7 @@ const Testimonial = () => {
             <Image
              src="/img/home-page/sushiwood-logo.jpg"
              alt="sushiwood-logo"
-             width={32}
+             width={42}
              height={32}
              className="rounded-md"
             />
@@ -66,9 +66,15 @@ const Testimonial = () => {
             </div>
           </div>
           <div className="flex flex-col gap-5">
-            <h4>Website LOGO</h4>
+            <Image
+              src="/img/home-page/joly-logo.gif"
+              alt="sushiwood-logo"
+              width={42}
+              height={32}
+              className="rounded-md"
+              />
             <div className="border-t flex flex-col gap-2">
-              <h4>Website Name</h4>
+              <h4 className="font-bold">Joly Bear</h4>
               <blockquote className="text-sm">
                 “Working with WebTeck was a game-changer for my online presence.
                 Their talented team brought our ideas to life with a sleek and
