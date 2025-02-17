@@ -186,7 +186,7 @@ const Header = () => {
           </ul>
           <div className="flex justify-center items-center gap-12 pt-10 pb-8 px-4">
             <div className="flex gap-2 items-center">
-              <Image src="/img/home-page/webteck-transparent-logo.png" 
+              <Image src="/img/home-page/WebTeck-Transparent-logo.png" 
               className="h-7 w-7" 
               alt="vancouver webteck logo" 
               height={7} 
