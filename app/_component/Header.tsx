@@ -41,8 +41,8 @@ const Header = () => {
                 src="/img/home-page/webteck-transparent-logo.png"
                 alt="Vancouver WebTeck logo"
                 className="h-10 w-full"
-                height={20}
-                width={20}
+                height={40}
+                width={100}
               />
               <div
                 className={`hidden sm:block ${isScrolled ? "hidden" : "block"}`}
@@ -189,8 +189,8 @@ const Header = () => {
               <Image src="/img/home-page/webteck-transparent-logo.png" 
               className="h-7 w-7" 
               alt="vancouver webteck logo" 
-              height={7} width={7}
-              />
+              height={7} 
+              width={7}/>
               <p className="text-[#999999] text-md font-regular">Vancouver WebTeck</p>
             </div>
 
