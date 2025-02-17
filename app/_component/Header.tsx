@@ -38,10 +38,11 @@ const Header = () => {
           <Link href="/">
             <div className="flex items-center gap-2 cursor-pointer">
               <Image
-                src="/img/home-page/webTeck-transparent-logo.png"
+                src="/img/home-page/webteck-transparent-logo.png"
                 alt="Vancouver WebTeck logo"
-                width={20}
+                className="h-10 w-full"
                 height={20}
+                width={20}
               />
               <div
                 className={`hidden sm:block ${isScrolled ? "hidden" : "block"}`}
