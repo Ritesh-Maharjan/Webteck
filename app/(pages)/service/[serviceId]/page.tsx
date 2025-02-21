@@ -16,9 +16,9 @@ import Head from "next/head";
 export default function ServicePage({
   params,
 }: {
-  params: { serviceId: string };
+  params: Promise<{ serviceId: string }>;
 }) {
-  const [serviceId, setServiceId] = useState<string | null>(params.serviceId);
+  const [serviceId, setServiceId] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchServiceId = async () => {
