@@ -10,14 +10,15 @@ import ContactForm from "../../../_component/contactpage/ContactForm";
 import { Transform } from "@/_component";
 import Image from "next/image";
 import { ServiceFaq } from "@/_component/servicepage/ServiceFaq";
+import Head from "next/head";
 
 
 export default function ServicePage({
   params,
 }: {
-  params: Promise<{ serviceId: string }>;
+  params: { serviceId: string };
 }) {
-  const [serviceId, setServiceId] = useState<string | null>(null);
+  const [serviceId, setServiceId] = useState<string | null>(params.serviceId);
 
   useEffect(() => {
     const fetchServiceId = async () => {
@@ -34,6 +35,13 @@ export default function ServicePage({
 
   return (
     <>
+      {/* SEO: Canonical Tag */}
+      <Head>
+        <title>{service?.heading} - Vancouver WebTeck</title>
+        <meta name="description" content={service?.subheading || "Default meta description"} />
+        <link rel="canonical" href={`https://webteck.ca/service/${serviceId}`} />
+      </Head>
+
       <div
         className={`relative bg-cover bg-center text-white`}
         style={{

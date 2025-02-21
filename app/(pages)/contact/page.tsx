@@ -3,10 +3,18 @@ import ContactForm from "../../_component/contactpage/ContactForm";
 import HeadingTitle from "../../_component/ui/HeadingTitle";
 import Investment from "../../_component/Investment";
 import TextSlider, { defaultTexts } from "../../_component/ui/TextSlider";
+import Head from "next/head";
 
-const page = () => {
+const page: React.FC = () => {
   return (
     <>
+      {/* SEO: Canonical Tag */}
+      <Head>
+        <title>Contact Us - Vancouver WebTeck</title>
+        <meta name="description" content="Get in touch with Vancouver WebTeck for expert web development and design services." />
+        <link rel="canonical" href="https://webteck.ca/contact" />
+      </Head>
+
       <div className="bg-[url('/img/contact-page/contact-bg.png')] bg-cover min-h-screen">
         <div className="max-w-screen-xl mx-auto px-8 grid py-20 md:grid-cols-6 gap-y-10 md:mt-20">
           <div className="flex flex-col gap-6 justify-between md:col-span-3">
